@@ -1,0 +1,17 @@
+/*----------------------------------------------------DESIGN Du Header--------------------------------------------------------------------------------------*/
+/*On defini une largeur maximum pour le menu nav et on le centre*/
+header nav {
+    width: 100%;
+    text-align: center;
+    background-color: #cda100;
+}
+/*on met les elements du menu en display inline-block*/
+header nav  li {
+    display: inline-block;
+    float: none;
+}
+/*on espace les elements du menu*/
+header nav  li  a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
