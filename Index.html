@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Accueil</title>
     <link rel="stylesheet" type="text/css" href="Css/MainCss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 </head>
 <body>
 <header>
@@ -22,12 +24,55 @@
 </header>
 <main>
     <section>
+        <div id='Accueil-slider'>
+            <div class="slider-inner">
+                <ul>
+                    <li><a class="Image" href="Image/1.jpg"></a></li>
+                    <li>
+                        <div class="Video">
+                            <iframe src="https://player.vimeo.com/video/93292237" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <a class="Image" href="Image/2.jpg"></a>
+                        <div class="caption">Supports Youtube, Vimeo and HTML video/audio</div>
+                        <div class="video-playbutton-layer"></div>
+                    </li>
+                    <li>
+                        <div class="Video">
+                            <iframe src="https://www.youtube.com/embed/Bp119VFEjHE?enablejsapi=1&start=216&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1" frameborder="0" allowfullscreen data-autoplay="false"></iframe>
+                        </div>
+                        <a class="Image" href="Image/3.jpg"></a>
+                        <div class="caption">This video starts from 3:36</div>
+                        <div class="video-playbutton-layer"></div>
+                    </li>
+                    <li>
+                        <div class="Video">
+                            <video controls width="100%">
+                                <source src="Video/mcvideo.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                    </li>
+                    <li>
+                            <a class="Image" href="Image/5.jpg"></a>
+                        <div class="Video" style="background-color:transparent;height:auto;top:auto;bottom:0px;">
+                            <audio controls data-autoplay="1">
+                                <source src="Video/mcaudio.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </li>
+                </ul>
+                <div class="fs-icon"></div>
+            </div>
+        </div>
     </section>
     <aside>
     </aside>
     <article>
     </article>
-    <footer></footer>
+    <footer>
+
+    </footer>
 </main>
+<script src="JavaScript/AccueilVideoPlugin.js"></script>
+<script src="JavaScript/Accueil-slider.js"></script>
 </body>
 </html>
