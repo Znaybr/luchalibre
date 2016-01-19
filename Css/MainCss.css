@@ -105,7 +105,7 @@ header nav  li  a {
 
 
 /* --------- slider image ------- */
-#Accueil-slider .Image {
+#Accueil-slider .ns-img {
     background-color:rgba(0,0,0,0.3);
     background-size:contain;
 
@@ -234,7 +234,7 @@ header nav  li  a {
 /*pagination des  prev/next buttons*/
 #Accueil-slider-prev div {opacity:0;margin-left:30px;transition:opacity 0.7s;}
 #Accueil-slider-next div {opacity:0;float:right;margin-right:30px;transition:opacity 0.7s;}
-#Accueil-slider-prev:hover div, #ninja-slider-next:hover div{opacity:1;}
+#Accueil-slider-prev:hover div, #Accueil-slider-next:hover div{opacity:1;}
 
 /* fleches */
 #Accueil-slider-prev::before, #Accueil-slider-next::before {
@@ -317,7 +317,7 @@ header nav  li  a {
         left: -12px;
     }
 
-    #ninja-slider-next {
+    #Accueil-slider-next {
         right: -12px;
     }
 }
@@ -329,8 +329,10 @@ header nav  li  a {
     }
 }
 /*----------------------------------------------------Design du Footer----------------------------------------------------------------------------------------*/
+/*------------lien de page du footer--------*/
 footer nav {
     width: 100%;
+
 
     background-color: #cda100;
 }
@@ -339,4 +341,8 @@ footer nav  li {
     display: block;
   padding-bottom: 5px;
 
+
 }
+
+/*-----------------reseau sociaux du footer---------------------*/
+
