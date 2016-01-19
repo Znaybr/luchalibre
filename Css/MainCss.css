@@ -149,7 +149,7 @@ header nav  li  a {
 
 
 /* ---------s'il y a des videos  dans le slider------- */
-#Accueil-slider .Video, .video-playbutton-layer
+#Accueil-slider .video, .video-playbutton-layer
 {
     top:0; left:0; border:0;
     width: 100%;height: 100%;
