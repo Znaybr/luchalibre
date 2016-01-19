@@ -328,4 +328,15 @@ header nav  li  a {
         display:none;
     }
 }
-/*-----------------------------------------Design du Footer----------------------------------------------------------------------------------------*
+/*----------------------------------------------------Design du Footer----------------------------------------------------------------------------------------*/
+footer nav {
+    width: 100%;
+
+    background-color: #cda100;
+}
+/*on met les elements du menu en display inline-block*/
+footer nav  li {
+    display: block;
+  padding-bottom: 5px;
+
+}
