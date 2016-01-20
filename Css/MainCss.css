@@ -17,6 +17,13 @@ header nav  li  a {
 }
 
 /*--------------------------------------------------------------------------Style du slider--------------------------------------------------------------------*/
+#bckg-index{
+    background: url("../Image/background-index.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
 #Accueil-slider {
     width:100%;
     background:#333;
