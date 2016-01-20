@@ -1,60 +1,117 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Contacts</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accueil</title>
+        <link rel="stylesheet" type="text/css" href="Css/MainCss.css">
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
     </head>
+    <body id="contacts">
+    <header>
+        <nav>
 
-    <body>
+            <ul>
+                <li><a href="#">Link </a></li>
+                <li><a href="#">Link </a></li>
+                <li><a href="#">Link </a></li>
+                <li><a href="#"><img src="Image/logo-solo.png" height="100" width="200"></a> </li>
+                <li><a href="#">Link </a></li>
+                <li><a href="#">Link </a></li>
+                <li><a href="#">Link </a></li>
+            </ul>
+        </nav>
+    </header>
         <!--            main-->
         <main>
+            <section>
             <h2>Contactez-nous</h2>
-            <form method="get" action="index.html">
-                <!--nom-->
-                <label for="nom">Nom<span>*</span></label>
-                <input type="text" name="nom" id="nom" placeholder="Nom de famille" autofocus required />
-                <!--prenom-->
-                <label for="prenom">preno;<span>*</span></label>
-                <input type="text" name="prenom" id="prenom" placeholder="Prenom" required />
-                <!--courriel-->
-                <label for="courriel">Courriel<span>*</span></label>
-                <input type="email" name="courriel" id="courriel" placeholder="exemple@exemple.com" />
-                <!--tel-->
-                <label for="tel">Téléphone</label>
-                <input type="tel" name="tel" id="tel" placeholder="optionnel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" />
-                <!--deja venu-->
-                <label for="venuoui">Je suis deja venu</label>
-                <input type="radio" name="radiovenu" id="venuoui">
-                <label for="venunon">Je ne suis jamais venu</label>
-                <input type="radio" name="radiovenu" id="venunon">
-                <!--lutteur prefere-->
-                <input type="checkbox" id="lutteur1" name="lutteurs" />
-                <label for="lutteur1">lutteur1</label>
-                <input type="checkbox" id="lutteur2" name="lutteurs" />
-                <label for="lutteur2">lutteur1</label>
-                <input type="checkbox" id="lutteur3" name="lutteurs" />
-                <label for="lutteur3">lutteur1</label>
-                <input type="checkbox" id="lutteur4" name="lutteurs" />
-                <label for="lutteur4">lutteur1</label>
-                <input type="checkbox" id="lutteur5" name="lutteurs" />
-                <label for="lutteur5">lutteur1</label>
-                <input type="checkbox" id="lutteur6" name="lutteurs" />
-                <label for="lutteur6">lutteur1</label>
-                <!--tenue preferee-->
-                <label for="tenue">Quelle est ta tenue preferee sur le ring?</label>
-                <input list="liste-tenues" type="text" id="tenue" name="tenue">
-                <datalist id="liste-tenues">
-                    <option>cagoule, short</option>
-                    <option>masque, debardeur, pantalon</option>
-                    <option>masque, gants, short</option>
-                </datalist>
-                <!--message-->
-                <label for="message">Votre message</label>
-                <textarea rows="10" cols="10" name="message" id="message"></textarea>
+                <form method="get" action="index.html">
+                    <fieldset>
+                        <legend>Vos informations personnelels</legend>
+                        <ul>
+                            <li><!--nom-->
+                                <label for="nom">Nom<span>*</span></label>
+                                <input type="text" name="nom" id="nom" placeholder="Nom de famille" autofocus required />
+                            </li>
 
-                <input type="submit" value="Soumettre"/>
-                <input type="reset" value="re-initialiser"/>
-            </form>
+                            <li><!--prenom-->
+                                <label for="prenom">Prenom<span>*</span></label>
+                                <input type="text" name="prenom" id="prenom" placeholder="Prenom" required />
+                            </li>
+
+                            <li><!--courriel-->
+                                <label for="courriel">Courriel<span>*</span></label>
+                                <input type="email" name="courriel" id="courriel" placeholder="exemple@exemple.com" />
+                            </li>
+
+                            <li><!--tel-->
+                                <label for="tel">Téléphone</label>
+                                <input type="tel" name="tel" id="tel" placeholder="optionnel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" />
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Votre fréquentation du stade</legend>
+                        <ul>
+                            <li><!--deja venu-->
+                                <label for="venuoui">Je suis déjà venu</label>
+                                <input type="radio" name="radiovenu" id="venuoui">
+                                <label for="venunon">Je ne suis jamais venu</label>
+                                <input type="radio" name="radiovenu" id="venunon">
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Vos préférences de fan</legend>
+                        <ul>
+                            <li><!--lutteur prefere-->
+                                <input type="checkbox" id="lutteur1" name="lutteurs" />
+                                <label for="lutteur1">lutteur1</label>
+                                <input type="checkbox" id="lutteur2" name="lutteurs" />
+                                <label for="lutteur2">lutteur1</label>
+                                <input type="checkbox" id="lutteur3" name="lutteurs" />
+                                <label for="lutteur3">lutteur1</label>
+                                <input type="checkbox" id="lutteur4" name="lutteurs" />
+                                <label for="lutteur4">lutteur1</label>
+                                <input type="checkbox" id="lutteur5" name="lutteurs" />
+                                <label for="lutteur5">lutteur1</label>
+                                <input type="checkbox" id="lutteur6" name="lutteurs" />
+                                <label for="lutteur6">lutteur1</label>
+                            </li>
+
+                            <li><!--tenue preferee-->
+                                <label for="tenue">Quelle est ta tenue preferee sur le ring?</label>
+                                <input list="liste-tenues" type="text" id="tenue" name="tenue">
+                                <datalist id="liste-tenues">
+                                    <option>cagoule, short</option>
+                                    <option>masque, debardeur, pantalon</option>
+                                    <option>masque, gants, short</option>
+                                </datalist>
+                            </li>
+
+                            <li><!--message-->
+                                <label for="message">Votre message</label>
+                                <textarea rows="10" cols="10" name="message" id="message"></textarea>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <ul>
+                        <li><!--soumettre-->
+                            <input type="submit" value="Soumettre"/>
+                        </li>
+
+                        <li><!--re initialisé-->
+                            <input type="reset" value="re-initialiser"/>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+            <aside>
+                <p>Contacts</p>
+            </aside>
         </main>
 
     </body>

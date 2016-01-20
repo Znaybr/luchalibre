@@ -524,3 +524,56 @@ figure>img:hover {
 
     }
 }
+
+
+/***********************************************************/
+/**********************PAGE CONTACT*************************/
+/***********************************************************/
+
+#contacts{
+    background-image: url("../Image/background-contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacts section{
+    width: 75%;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 4px;
+    margin-left: 4%;
+}
+
+#contacts ul, input{
+    list-style: none;
+}
+
+#contacts fieldset{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contacts fieldset + fieldset + ul {
+    padding: 0;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#contacts fieldset + fieldset + ul li{
+    display: inline-block;
+}
+
+#contacts aside{
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    margin-top: -5%;
+    font-size: 150px;
+    transform: rotate(90deg);
+}
+
+#contacts aside p{
+    font-family: "bangers";
+    color: #ee3826;
+}
+
