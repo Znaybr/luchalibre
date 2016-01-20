@@ -347,6 +347,9 @@ footer nav  li {
 /*-----------------reseau sociaux du footer---------------------*/
 
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
+#luchador>ul{
+    list-style-type: none;
+}
 
 #luchador>ul>li{
     background-color: #cccccc;
@@ -355,17 +358,14 @@ footer nav  li {
     margin:40px;
     position: relative;
     right: 500px;
-    animation-name: deplacement;
-    animation-duration: 2s ;
-    animation-delay: 2s;
-    animation-iteration-count: 1;
+
 }
 
 #luchador>ul>li:hover{
     animation-name: deplacement;
     animation-duration: 120s ;
-    animation-delay: 2s;
-    animation-iteration-count: 10;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
 
 }
 
@@ -376,20 +376,34 @@ footer nav  li {
 }
 #luchador>ul>li>img:hover {
     transform: scale(1.3);
+
 }
 #luchador>ul>li>h2{
     width: 200px;
     margin-left: 200px;
-
-
-
+    margin-top: 10px;
 }
+
+
 
 #luchador>ul>li>a{
     margin-left: 200px;
 
 }
+#luchador>ul>li>a:hover{
+    transform: rotate(20deg);
+}
 
 @keyframes deplacement {
-    0% { top: 0px; left: 0px; }
-    25% { top: 0px; left: 100px; }
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    100% {
+        top: 0px;
+        left: 100px;
+    }
+}
+
+/*---------------------------------------------style pages details------------------------------------------------*/
+
