@@ -356,8 +356,8 @@ footer nav  li {
 
 #luchador>ul>li{
     background-color: #cccccc;
-    height: 205px;
-    width: 800px;
+    height: 200px;
+    width: 1000px;
     margin:40px;
     position: relative;
     right: 585px;
@@ -375,7 +375,7 @@ footer nav  li {
 }
 
 #luchador>ul>li>img{
-    width: 14.5%;
+    width: 11.5%;
     float:right;
     border-radius: 5%;
 }
