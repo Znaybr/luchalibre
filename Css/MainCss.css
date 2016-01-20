@@ -348,7 +348,7 @@ footer nav  li {
 
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #luchador{
-    font-family: "Arial Black";
+    font-family: "bangers";
 }
 #luchador>ul{
     list-style-type: none;
@@ -386,6 +386,7 @@ footer nav  li {
 #luchador>ul>li>h2{
     width: 300px;
     margin-left: 220px;
+    font-size: 50px;
 
 }
 
@@ -393,7 +394,7 @@ footer nav  li {
 
 #luchador>ul>li>a{
     margin-left: 220px;
-    margin-top: 50px;
+
 
 }
 #luchador>ul>li>a:hover{
@@ -420,8 +421,8 @@ footer nav  li {
 #details{
     width:620px;
     display: inline-block;
-    font-family: "lobster";
-    text-shadow:  30px 7px 0px #cf993a;
+    font-family: "bangers";
+    text-shadow:  20px 7px 0px rgba(51, 70, 99, 0.46);
 
 }
 
