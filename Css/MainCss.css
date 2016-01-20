@@ -346,3 +346,50 @@ footer nav  li {
 
 /*-----------------reseau sociaux du footer---------------------*/
 
+/*------------------------------------------style gallerie luchador--------------------------------------------------------*/
+
+#luchador>ul>li{
+    background-color: #cccccc;
+    height: 180px;
+    width: 700px;
+    margin:40px;
+    position: relative;
+    right: 500px;
+    animation-name: deplacement;
+    animation-duration: 2s ;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+}
+
+#luchador>ul>li:hover{
+    animation-name: deplacement;
+    animation-duration: 120s ;
+    animation-delay: 2s;
+    animation-iteration-count: 10;
+
+}
+
+#luchador>ul>li>img{
+    width: 14.5%;
+    float:right;
+    border-radius: 5%;
+}
+#luchador>ul>li>img:hover {
+    transform: scale(1.3);
+}
+#luchador>ul>li>h2{
+    width: 200px;
+    margin-left: 200px;
+
+
+
+}
+
+#luchador>ul>li>a{
+    margin-left: 200px;
+
+}
+
+@keyframes deplacement {
+    0% { top: 0px; left: 0px; }
+    25% { top: 0px; left: 100px; }
