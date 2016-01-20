@@ -347,25 +347,30 @@ footer nav  li {
 /*-----------------reseau sociaux du footer---------------------*/
 
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
+#luchador{
+    font-family: "Arial Black";
+}
 #luchador>ul{
     list-style-type: none;
 }
 
 #luchador>ul>li{
     background-color: #cccccc;
-    height: 180px;
-    width: 700px;
+    height: 205px;
+    width: 800px;
     margin:40px;
     position: relative;
-    right: 500px;
+    right: 585px;
 
 }
 
 #luchador>ul>li:hover{
     animation-name: deplacement;
-    animation-duration: 120s ;
-    animation-delay: 1s;
+    animation-duration: 10s ;
+    animation-delay: 0s;
     animation-iteration-count: 1;
+
+
 
 }
 
@@ -379,15 +384,16 @@ footer nav  li {
 
 }
 #luchador>ul>li>h2{
-    width: 200px;
-    margin-left: 200px;
-    margin-top: 10px;
+    width: 300px;
+    margin-left: 220px;
+
 }
 
 
 
 #luchador>ul>li>a{
-    margin-left: 200px;
+    margin-left: 220px;
+    margin-top: 50px;
 
 }
 #luchador>ul>li>a:hover{
@@ -395,15 +401,93 @@ footer nav  li {
 }
 
 @keyframes deplacement {
-    0% {
-        top: 0px;
-        left: 0px;
+    0% {transform: translate(0px);
+
     }
-    100% {
-        top: 0px;
-        left: 100px;
+    25% {transform: translate(320px);
+
     }
+    50% {transform: translate(300px);
+
+    }
+    100% {transform: translate(0px);
+
+    }
+
 }
 
 /*---------------------------------------------style pages details------------------------------------------------*/
+#details{
+    width:620px;
+    display: inline-block;
+    font-family: "lobster";
+    text-shadow:  30px 7px 0px #cf993a;
 
+}
+
+#details>section>figure{
+    width:200px;
+    display: inline-block;
+}
+
+#details>section>article{
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+figcaption{
+    font-size: 25px;
+    text-align: center;
+
+
+
+}
+figure>img{
+    border-radius: 10px;
+    margin-top: 10px;
+}
+figure>img:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 10;
+}
+
+@keyframes shake {
+    0% {
+         transform: rotate(0.5deg);
+
+     }
+    12.5% {
+        transform: rotate(-0.5deg);
+
+    }
+    25% {
+        transform: rotate(0.5deg);
+
+    }
+    37.5% {
+        transform: rotate(-0.5deg);
+
+    }
+
+    50% {
+        transform: rotate(0.5deg);
+
+    }
+    62.5% {
+        transform: rotate(-0.5deg);
+
+    }
+    75% {
+        transform: rotate(0.5deg);
+
+    }
+    100% {
+        transform: rotate(-0.5deg);
+
+    }
+}
