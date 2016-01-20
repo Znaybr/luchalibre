@@ -2,8 +2,14 @@
 /*On defini une largeur maximum pour le menu nav et on le centre*/
 header nav {
     width: 100%;
+    height: 40px;
     text-align: center;
-    background-color: #cda100;
+    background-color: rgba(221, 210, 177,0.8);
+    background: -moz-linear-gradient(left, rgba(221,210,177,0) 0%, rgba(221,210,177,1) 20%, rgba(221,210,177,1) 80%, rgba(221,210,177,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddd2b1', endColorstr='#00ddd2b1',GradientType=1 ); /* IE6-9 */
+
 }
 /*on met les elements du menu en display inline-block*/
 header nav  li {
@@ -15,6 +21,8 @@ header nav  li  a {
     padding-left: 30px;
     padding-right: 30px;
 }
+
+
 
 /*--------------------------------------------------------------------------Style du slider--------------------------------------------------------------------*/
 #bckg-index{
@@ -354,7 +362,7 @@ footer nav  li {
 /*-----------------reseau sociaux du footer---------------------*/
 
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
-#bckg{
+#bck_lutteurs{
     background: url("../Image/background-lutteurs.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -380,7 +388,8 @@ footer nav  li {
 
 #luchador>ul>li{
     background-color: #cccccc;
-    height: 200px;
+    border-radius: 10px;
+    height: 196px;
     width: 1000px;
     margin:40px;
     position: relative;
@@ -441,12 +450,7 @@ footer nav  li {
 }
 
 /*---------------------------------------------style pages details------------------------------------------------*/
-#det_back{
-    background: url("../Image/background-lutteurs.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+
 
 #details{
     width:620px;
