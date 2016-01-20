@@ -347,9 +347,26 @@ footer nav  li {
 /*-----------------reseau sociaux du footer---------------------*/
 
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
+#bckg{
+    background: url("../Image/background-lutteurs.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 #luchador{
     font-family: "bangers";
+
+
 }
+
+#luchador>h1{
+    margin-left: 20px;
+    background: -webkit-linear-gradient(#eee, #333);
+    font-size: 40px;
+    width:32%;
+}
+
 #luchador>ul{
     list-style-type: none;
 }
@@ -388,6 +405,7 @@ footer nav  li {
     margin-left: 220px;
     font-size: 50px;
 
+
 }
 
 
@@ -397,9 +415,7 @@ footer nav  li {
 
 
 }
-#luchador>ul>li>a:hover{
-    transform: rotate(20deg);
-}
+
 
 @keyframes deplacement {
     0% {transform: translate(0px);
@@ -418,11 +434,19 @@ footer nav  li {
 }
 
 /*---------------------------------------------style pages details------------------------------------------------*/
+#det_back{
+    background: url("../Image/background-lutteurs.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 #details{
     width:620px;
     display: inline-block;
     font-family: "bangers";
-    text-shadow:  20px 7px 0px rgba(51, 70, 99, 0.46);
+    color: #c9c9c9;
+    text-shadow:  20px 7px 0px rgba(180, 58, 58, 0.82);
 
 }
 
