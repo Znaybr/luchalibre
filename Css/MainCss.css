@@ -398,8 +398,8 @@ footer nav  li {
 
 /*on espace les elements du menu bas de page*/
 footer nav  li  a {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 footer>nav>ul{
@@ -407,7 +407,12 @@ footer>nav>ul{
     float: left;
     font-family: bangers;
     font-size: 20px;
+    display: block;
 }
+
+
+
+
 /*-----------------reseau sociaux du footer---------------------*/
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
 @font-face {
