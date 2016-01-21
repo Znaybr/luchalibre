@@ -40,7 +40,9 @@ header>a{
     z-index: 1;
 }
 
-header>nav>
+header>nav>ul>li{
+    margin-top: 13px;
+}
 
 
 /*--------------------------------------------------------------------------Style du slider--------------------------------------------------------------------*/
@@ -386,6 +388,17 @@ footer nav  li {
 
 }
 
+
+/*on espace les elements du menu bas de page*/
+footer nav  li  a {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+footer>nav>ul{
+    width: 600px;
+    float: left;
+}
 /*-----------------reseau sociaux du footer---------------------*/
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
 @font-face {
@@ -611,6 +624,8 @@ main {
 
 
 }
+
+
 
 
 @keyframes deplacement {
