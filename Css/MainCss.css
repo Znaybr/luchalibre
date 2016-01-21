@@ -406,6 +406,20 @@ footer>nav>ul{
     font-family: bangers;
     font-size: 20px;
 }
+footer>nav{
+    display: inline-block;
+    text-align: center;
+}
+
+#social>li>a>img{
+    width:40px;
+
+}
+#social>li>{
+
+    float: right;
+
+}
 /*-----------------reseau sociaux du footer---------------------*/
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
 
@@ -634,11 +648,12 @@ html {
 }
 #luchador>p{
     color:red;
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    margin: -95% 0 0 1000px;
+    font-size: 130px;
     transform: rotate(90deg);
-    font-size: 145px;
-    margin-top: -1100px;
-    right: 0px;
-    position: fixed;
 
 
 }
