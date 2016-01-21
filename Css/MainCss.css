@@ -746,18 +746,24 @@ figure>img:hover {
 /**********************PAGE CONTACT*************************/
 /***********************************************************/
 
+/*----------------Définition globale de la page------------*/
 #contacts{
     background-image: url("../Image/background-contact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/*-----------------------SECTION GAUCHE--------------------*/
 #contacts section{
     width: 85%;
     display: inline-block;
     background-color: rgba(255,255,255,0.85);
     border-radius: 4px;
     margin-bottom: 20px;
+}
+
+#contacts h2{
+    text-align: center;
 }
 
 #contacts ul, input{
@@ -783,6 +789,28 @@ figure>img:hover {
 
 #contacts fieldset + fieldset + ul li{
     display: inline-block;
+}
+
+#contacts fieldset:nth-of-type(1) ul{
+    padding: 0;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#contacts fieldset:nth-of-type(1) label{
+    padding: 0;
+    margin: 0 auto;
+    width: 150px;
+}
+
+#contacts fieldset:nth-of-type(1) input{
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#contacts span{
+    color: #ee3826;
 }
 
 #contacts aside{
