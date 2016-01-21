@@ -6,6 +6,7 @@
         <title>Accueil</title>
         <link rel="stylesheet" type="text/css" href="Css/MainCss.css">
         <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
     </head>
     <body id="contacts">
     <header>
@@ -25,24 +26,22 @@
             <section>
             <h2>Contactez-nous</h2>
                 <form method="get" action="index.html">
-                    <fieldset>
-                        <legend>Vos informations personnelels</legend>
+
+                    <fieldset> <!--PREMIER FIELDSET-->
+                        <legend>Vos informations personnelles</legend>
                         <ul>
                             <li><!--nom-->
                                 <label for="nom">Nom<span>*</span></label>
                                 <input type="text" name="nom" id="nom" placeholder="Nom de famille" autofocus required />
                             </li>
-
                             <li><!--prenom-->
                                 <label for="prenom">Prenom<span>*</span></label>
                                 <input type="text" name="prenom" id="prenom" placeholder="Prenom" required />
                             </li>
-
                             <li><!--courriel-->
                                 <label for="courriel">Courriel<span>*</span></label>
                                 <input type="email" name="courriel" id="courriel" placeholder="exemple@exemple.com" />
                             </li>
-
                             <li><!--tel-->
                                 <label for="tel">Téléphone</label>
                                 <input type="tel" name="tel" id="tel" placeholder="optionnel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" />
@@ -50,7 +49,7 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset><!--SECOND FIELDSET-->
                         <legend>Votre fréquentation du stade</legend>
                         <ul>
                             <li><!--deja venu-->
@@ -62,7 +61,7 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset><!--TROISIEME FIELDSET-->
                         <legend>Vos préférences de fan</legend>
                         <ul>
                             <li><!--lutteur prefere-->
@@ -96,11 +95,11 @@
                             </li>
                         </ul>
                     </fieldset>
+
                     <ul>
                         <li><!--soumettre-->
                             <input type="submit" value="Soumettre"/>
                         </li>
-
                         <li><!--re initialisé-->
                             <input type="reset" value="re-initialiser"/>
                         </li>

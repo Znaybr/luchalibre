@@ -1,9 +1,15 @@
+/*settings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+}
 /*----------------------------------------------------DESIGN Du Header--------------------------------------------------------------------------------------*/
 /*On defini une largeur maximum pour le menu nav et on le centre*/
 header nav {
     width: 100%;
-    height: 50px;
-    margin-top: 80px;
+    height: 40px;
     text-align: center;
     background-color: rgba(221, 210, 177,0.8);
     background: -moz-linear-gradient(left, rgba(221,210,177,0) 0%, rgba(221,210,177,1) 20%, rgba(221,210,177,1) 80%, rgba(221,210,177,0) 100%); /* FF3.6-15 */
@@ -12,43 +18,26 @@ header nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddd2b1', endColorstr='#00ddd2b1',GradientType=1 ); /* IE6-9 */
 
 }
-
-
-
 /*on met les elements du menu en display inline-block*/
 header nav  li {
     display: inline-block;
     float: none;
-
 }
-
 /*on espace les elements du menu*/
 header nav  li  a {
-    padding-left: 150px;
-    padding-right: 150px;
-
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-main{
-    padding-top: 40px;
-}
-/*----positionnement du logo dans menu-----*/
-header>a{
-    position: absolute;
-    left: 700px;
-    top: 30px;
-    z-index: 1;
-}
 
-header>nav>
 
 
 /*--------------------------------------------------------------------------Style du slider--------------------------------------------------------------------*/
 #bckg-index{
     background: url("../Image/background-index.jpg");
     background-repeat: no-repeat;
-
-
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 #Accueil-slider {
@@ -62,7 +51,7 @@ header>nav>
 }
 
 #Accueil-slider.fullscreen {
-   background:black;
+    background:black;
 }
 
 #Accueil-slider .fs-icon {
@@ -363,30 +352,42 @@ header>nav>
     }
 }
 /*----------------------------------------------------Design du Footer----------------------------------------------------------------------------------------*/
-
 /*------------lien de page du footer--------*/
-
-footer nav {
+footer {
     width: 100%;
-    height: 80px;
-    text-align: center;
-    background-color: rgba(221, 210, 177,0.8);
-    background: -moz-linear-gradient(left, rgba(221,210,177,0) 0%, rgba(221,210,177,1) 20%, rgba(221,210,177,1) 80%, rgba(221,210,177,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddd2b1', endColorstr='#00ddd2b1',GradientType=1 ); /* IE6-9 */
 
+    background-color: #cda100;
 }
-
 /*on met les elements du menu en display inline-block*/
 footer nav  li {
-    display: inline-block;
+    display: block;
   padding-bottom: 5px;
-
+  padding-left: 5px;
 
 }
 
+footer div{
+    display: inline-block;
+    float: right;
+
+}
+footer nav{
+    display: inline-block;
+}
 /*-----------------reseau sociaux du footer---------------------*/
+
+/*------------------------------------------style gallerie luchador--------------------------------------------------------*/
+#bck_lutteurs{
+    background: url("../Image/background-lutteurs.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer div li{
+    text-align: right;
+    display: inline-block;
+}
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
 @font-face {
     font-family: Lato;
@@ -417,7 +418,7 @@ html {
     padding: 2.5em 0;
 }
 
-main {
+#Events main {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
@@ -442,18 +443,18 @@ main {
         float: left;
         width: 50%;
     }
-    #Events table:nth-child(odd) {
+    #Events  table:nth-child(odd) {
         clear: left;
     }
 }
 @media screen and (min-width: 800px) {
-    #Events table {
+    #Events  table {
         width: 33.3333333%;
     }
-    .grid-1-5:nth-child(3n+1) {
+    #Events  table:nth-child(3n+1) {
         clear: left;
     }
-    .grid-1-5:nth-child(odd) {
+    #Events  table:nth-child(odd) {
         clear: none;
     }
 }
@@ -461,7 +462,7 @@ main {
     #Events table {
         width: 20%;
     }
-    #Events table:nth-child(odd), table:nth-child(3n+1) {
+    #Events table:nth-child(odd), #Events table:nth-child(3n+1) {
         clear: none;
     }
 }
@@ -482,7 +483,7 @@ main {
     transform: scale(1.025);
     z-index: 2;
 }
-#Events table:hover:before, table:hover:after {
+#Events table:hover:before, #Events table:hover:after {
     content: "";
     position: absolute;
     background-color: #f67d35;
@@ -517,7 +518,6 @@ main {
     margin-left: -60px;
     text-decoration: none;
     width: 120px;
-    text-align: center;
 }
 #Events table:hover a {
     background-color: #ee7a36;
@@ -530,25 +530,17 @@ main {
     background-image: -webkit-linear-gradient(left, #ee7a36 0%, #eb495d 100%);
     background-image: linear-gradient(to right, #ee7a36 0%, #eb495d 100%);
 }
-#Events tfoot td{
-    padding-bottom: 25px;
+
+
+
+#Events  table img{
+
+     height:auto;
+     width: 100%;
 }
 
 
-#Events table img{
-
-    height:auto;
-    width: 100%;
-}
-
-/*------------------------------------------style gallerie luchador--------------------------------------------------------*/
-#bck_lutteurs{
-    background: url("../Image/background-lutteurs.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
+    /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #luchador{
     font-family: "bangers";
 
@@ -707,4 +699,86 @@ figure>img:hover {
         transform: rotate(-0.5deg);
 
     }
+}
+
+
+/***********************************************************/
+/**********************PAGE CONTACT*************************/
+/***********************************************************/
+
+#contacts{
+    background-image: url("../Image/background-contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacts section{
+    width: 75%;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 4px;
+    margin-left: 4%;
+    text-align: center;
+}
+
+#contacts ul, input{
+    list-style: none;
+}
+
+#contacts fieldset{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contacts fieldset + fieldset + ul {
+    padding: 0;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#contacts fieldset + fieldset + ul li{
+    display: inline-block;
+}
+
+#contacts aside{
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    margin-top: -5%;
+    font-size: 150px;
+    transform: rotate(90deg);
+}
+
+#contacts aside p{
+    font-family: "bangers";
+    color: #ee3826;
+}
+
+#contacts form{
+    margin: 20px auto;
+    text-align: center;
+}
+
+#contacts h2{
+    text-align: center;
+    color: #ee3826;
+    margin: 2% auto;
+}
+
+#contacts fieldset{
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#contacts legend{
+    padding: 8px;
+    font-weight: 700;
+}
+
+#contacts fieldset:nth-of-type(1) label{
+    width: 80px;
+    text-align: left;
+
 }
