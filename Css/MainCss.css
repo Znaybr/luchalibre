@@ -51,8 +51,7 @@ header>nav>ul>li{
 #bckg-index{
     background: url("../Image/background-index.jpg");
     background-repeat: no-repeat;
-
-
+    background-size: cover;
 
 }
 #Accueil-slider {
@@ -427,7 +426,7 @@ html {
     background-size: 100%;
     background-image: radial-gradient(circle at top, #53455b 0%, #201e22 70%);
     color: #fff;
-    font-family: 'Lato', sans-serif;
+    font-family: bangers, sans-serif;
     font-size: 100%;
     min-height: 100%;
     line-height: 1.5;
@@ -467,10 +466,12 @@ html {
     #Events table {
         width: 33.3333333%;
     }
-    .grid-1-5:nth-child(3n+1) {
+
+    #Events table:nth-child(3n+1) {
         clear: left;
     }
-    .grid-1-5:nth-child(odd) {
+
+    #Events table:nth-child(odd) {
         clear: none;
     }
 }
