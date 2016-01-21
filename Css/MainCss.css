@@ -1,9 +1,3 @@
-/*settings*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /*----------------------------------------------------DESIGN Du Header--------------------------------------------------------------------------------------*/
 /*On defini une largeur maximum pour le menu nav et on le centre*/
 header nav {
@@ -17,6 +11,9 @@ header nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddd2b1', endColorstr='#00ddd2b1',GradientType=1 ); /* IE6-9 */
 
 }
+
+
+
 /*on met les elements du menu en display inline-block*/
 header nav  li {
     display: inline-block;
@@ -27,7 +24,6 @@ header nav  li  a {
     padding-left: 30px;
     padding-right: 30px;
 }
-
 
 
 
@@ -351,28 +347,29 @@ header nav  li  a {
     }
 }
 /*----------------------------------------------------Design du Footer----------------------------------------------------------------------------------------*/
-/*------------lien de page du footer--------*/
-footer {
-    width: 100%;
 
-    background-color: #cda100;
+/*------------lien de page du footer--------*/
+
+footer nav {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: rgba(221, 210, 177,0.8);
+    background: -moz-linear-gradient(left, rgba(221,210,177,0) 0%, rgba(221,210,177,1) 20%, rgba(221,210,177,1) 80%, rgba(221,210,177,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddd2b1', endColorstr='#00ddd2b1',GradientType=1 ); /* IE6-9 */
+
 }
+
 /*on met les elements du menu en display inline-block*/
 footer nav  li {
-    display: block;
+    display: inline-block;
   padding-bottom: 5px;
-  padding-left: 5px;
+
 
 }
 
-footer div{
-    display: inline-block;
-    float: right;
-
-}
-footer nav{
-    display: inline-block;
-}
 /*-----------------reseau sociaux du footer---------------------*/
 
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
@@ -383,163 +380,6 @@ footer nav{
     background-size: cover;
 }
 
-footer div li{
-    text-align: right;
-    display: inline-block;
-}
-/*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
-@font-face {
-    font-family: Lato;
-    src: url(lato/Lato-Medium.ttf);
-}
-html {
-    box-sizing: border-box;
-    height: 100%;
-}
-
-#Events *, *:before, *:after {
-    box-sizing: inherit;
-}
-
-#Events {
-    background-color: #211f23;
-    background-repeat: no-repeat;
-    *zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF53455B', endColorstr='#FF201E22');
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjAlIiByPSI3MCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM1MzQ1NWIiLz48c3RvcCBvZmZzZXQ9IjcwJSIgc3RvcC1jb2xvcj0iIzIwMWUyMiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-    background-size: 100%;
-    background-image: radial-gradient(circle at top, #53455b 0%, #201e22 70%);
-    color: #fff;
-    font-family: 'Lato', sans-serif;
-    font-size: 100%;
-    min-height: 100%;
-    line-height: 1.5;
-    padding: 2.5em 0;
-}
-
-#Events main {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1200px;
-}
-
-#Events .group:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#Events table{
-    border: 2px solid #5d4e65;
-    min-height: 400px;
-    padding: 1.25em;
-    position: relative;
-    text-align: center;
-    transition: all .2s ease-in-out;
-}
-@media screen and (min-width: 700px) {
-    #Events table {
-        float: left;
-        width: 50%;
-    }
-    #Events  table:nth-child(odd) {
-        clear: left;
-    }
-}
-@media screen and (min-width: 800px) {
-    #Events  table {
-        width: 33.3333333%;
-    }
-    #Events  table:nth-child(3n+1) {
-        clear: left;
-    }
-    #Events  table:nth-child(odd) {
-        clear: none;
-    }
-}
-@media screen and (min-width: 1120px) {
-    #Events table {
-        width: 20%;
-    }
-    #Events table:nth-child(odd), #Events table:nth-child(3n+1) {
-        clear: none;
-    }
-}
-
-#Events table:hover {
-    background-color: #53455b;
-    *zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF53455B', endColorstr='#FF201D22');
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUzNDU1YiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIwMWQyMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #53455b), color-stop(100%, #201d22));
-    background-image: -moz-linear-gradient(top, #53455b 0%, #201d22 100%);
-    background-image: -webkit-linear-gradient(top, #53455b 0%, #201d22 100%);
-    background-image: linear-gradient(to bottom, #53455b 0%, #201d22 100%);
-    border-top: 2px solid #ec7a37;
-    border-bottom: 2px solid #ff4f69;
-    box-shadow: 0px 0px 10px 0px #323232;
-    transform: scale(1.025);
-    z-index: 2;
-}
-#Events table:hover:before, #Events table:hover:after {
-    content: "";
-    position: absolute;
-    background-color: #f67d35;
-    *zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF67D35', endColorstr='#FFFF4F68');
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y2N2QzNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmNGY2OCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f67d35), color-stop(100%, #ff4f68));
-    background-image: -moz-linear-gradient(top, #f67d35 0%, #ff4f68 100%);
-    background-image: -webkit-linear-gradient(top, #f67d35 0%, #ff4f68 100%);
-    background-image: linear-gradient(to bottom, #f67d35 0%, #ff4f68 100%);
-    top: -2px;
-    bottom: -2px;
-    width: 2px;
-}
-#Events table:hover:before {
-    left: -2px;
-}
-#Events table:hover:after {
-    right: -2px;
-}
-#Events table a {
-    background-color: #9c83aa;
-    border-radius: 20px;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 700;
-    padding: 0.75em 1.5em;
-    position: absolute;
-    bottom: 1.25em;
-    left: 50%;
-    margin-left: -60px;
-    text-decoration: none;
-    width: 120px;
-}
-#Events table:hover a {
-    background-color: #ee7a36;
-    *zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFEE7A36', endColorstr='#FFEB495D');
-    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlN2EzNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ViNDk1ZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-    background-size: 100%;
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ee7a36), color-stop(100%, #eb495d));
-    background-image: -moz-linear-gradient(left, #ee7a36 0%, #eb495d 100%);
-    background-image: -webkit-linear-gradient(left, #ee7a36 0%, #eb495d 100%);
-    background-image: linear-gradient(to right, #ee7a36 0%, #eb495d 100%);
-}
-
-
-
-#Events  table img{
-
-     height:auto;
-     width: 100%;
-}
-
-
-    /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #luchador{
     font-family: "bangers";
 
@@ -699,56 +539,3 @@ figure>img:hover {
 
     }
 }
-
-
-/***********************************************************/
-/**********************PAGE CONTACT*************************/
-/***********************************************************/
-
-#contacts{
-    background-image: url("../Image/background-contact.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#contacts section{
-    width: 75%;
-    display: inline-block;
-    background-color: rgba(255,255,255,0.85);
-    border-radius: 4px;
-    margin-left: 4%;
-}
-
-#contacts ul, input{
-    list-style: none;
-}
-
-#contacts fieldset{
-    width: 90%;
-    margin: 0 auto;
-}
-
-#contacts fieldset + fieldset + ul {
-    padding: 0;
-    text-align: center;
-    margin: 5px auto;
-}
-
-#contacts fieldset + fieldset + ul li{
-    display: inline-block;
-}
-
-#contacts aside{
-    display: inline-block;
-    vertical-align: top;
-    width: 15%;
-    margin-top: -5%;
-    font-size: 150px;
-    transform: rotate(90deg);
-}
-
-#contacts aside p{
-    font-family: "bangers";
-    color: #ee3826;
-}
-
