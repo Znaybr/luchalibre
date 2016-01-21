@@ -627,6 +627,14 @@ html {
 
 
 }
+#luchador>p{
+    color:red;
+    transform: rotate(90deg);
+    font-size: 200px;
+   /* margin-top: -1000px;*/
+
+
+}
 
 
 
