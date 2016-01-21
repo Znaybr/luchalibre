@@ -24,45 +24,45 @@
         <!--main-->
         <main>
             <section>
-            <h2>Contactez-nous</h2>
+            <h2>Contáctenos</h2>
                 <form method="get" action="index.html">
 
                     <fieldset> <!--PREMIER FIELDSET-->
-                        <legend>Vos informations personnelles</legend>
+                        <legend>Su información personal</legend>
                         <ul>
                             <li><!--nom-->
-                                <label for="nom">Nom<span>*</span></label>
-                                <input type="text" name="nom" id="nom" placeholder="Nom de famille" autofocus required />
+                                <label for="nom">Apellido<span>*</span></label>
+                                <input type="text" name="nom" id="nom" placeholder="Apellido" autofocus required />
                             </li>
                             <li><!--prenom-->
-                                <label for="prenom">Prenom<span>*</span></label>
-                                <input type="text" name="prenom" id="prenom" placeholder="Prenom" required />
+                                <label for="prenom">Nombre<span>*</span></label>
+                                <input type="text" name="prenom" id="prenom" placeholder="Nombre" required />
                             </li>
                             <li><!--courriel-->
-                                <label for="courriel">Courriel<span>*</span></label>
-                                <input type="email" name="courriel" id="courriel" placeholder="exemple@exemple.com" />
+                                <label for="courriel">E-mail<span>*</span></label>
+                                <input type="email" name="courriel" id="courriel" placeholder="ejemplo@ejemplo.com" />
                             </li>
                             <li><!--tel-->
-                                <label for="tel">Téléphone</label>
-                                <input type="tel" name="tel" id="tel" placeholder="optionnel" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" />
+                                <label for="tel">Teléfono</label>
+                                <input type="tel" name="tel" id="tel" placeholder="opcional" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" />
                             </li>
                         </ul>
                     </fieldset>
 
                     <fieldset><!--SECOND FIELDSET-->
-                        <legend>Votre fréquentation du stade</legend>
+                        <legend>Su asistencia a los estadios</legend>
                         <ul>
                             <li><!--deja venu-->
                                 <input type="radio" name="radiovenu" id="venuoui">
-                                <label for="venuoui">Je suis déjà venu</label>
+                                <label for="venuoui">Yo ya vine</label>
                                 <input type="radio" name="radiovenu" id="venunon">
-                                <label for="venunon">Je ne suis jamais venu</label>
+                                <label for="venunon">Nunca llegué</label>
                             </li>
                         </ul>
                     </fieldset>
 
                     <fieldset><!--TROISIEME FIELDSET-->
-                        <legend>Vos préférences de fan</legend>
+                        <legend>Preferentemente del fan</legend>
                         <ul>
                             <li><!--lutteur préféré-->
                                 <figure>
@@ -98,7 +98,7 @@
                             </li>
 
                             <li><!--tenue préférée-->
-                                <label for="tenue">Quelle est ta tenue préférée sur le ring?</label>
+                                <label for="tenue">Ring traje prefieren?</label>
                                 <input list="liste-tenues" type="text" id="tenue" name="tenue">
                                 <datalist id="liste-tenues">
                                     <option>cagoule, short</option>
@@ -108,7 +108,7 @@
                             </li>
 
                             <li><!--message-->
-                                <label for="message">Votre message</label>
+                                <label for="message">Vuestro mensaje</label>
                                 <textarea rows="10" cols="50" name="message" id="message"></textarea>
                             </li>
                         </ul>
@@ -116,16 +116,16 @@
 
                     <ul><!--VALIDATION-->
                         <li><!--soumettre-->
-                            <input type="submit" value="Soumettre"/>
+                            <input type="submit" value="Enviar"/>
                         </li>
                         <li><!--re initialisé-->
-                            <input type="reset" value="Re-initialiser"/>
+                            <input type="reset" value="Reiniciar"/>
                         </li>
                     </ul>
                 </form>
             </section>
             <aside>
-                <p>Contacts</p>
+                <p>Contacto</p>
             </aside>
         </main>
 

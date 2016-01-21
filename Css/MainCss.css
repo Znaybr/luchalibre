@@ -1,6 +1,4 @@
-*{
-    font-family: 'ABeeZee', sans-serif;
-}
+
 
 /*----------------------------------------------------DESIGN Du Header--------------------------------------------------------------------------------------*/
 /*On defini une largeur maximum pour le menu nav et on le centre*/
@@ -581,7 +579,7 @@ html {
 }
 
 #luchador{
-    font-family: "bangers";
+    font-family: bangers;
 
 
 }
@@ -646,7 +644,7 @@ html {
     color:red;
     transform: rotate(90deg);
     font-size: 145px;
-    margin-top: -1300px;
+    margin-top: -1100px;
     right: 0px;
     position: fixed;
 
