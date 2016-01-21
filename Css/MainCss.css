@@ -1,3 +1,7 @@
+*{
+    font-family: 'ABeeZee', sans-serif;
+}
+
 /*----------------------------------------------------DESIGN Du Header--------------------------------------------------------------------------------------*/
 /*On defini une largeur maximum pour le menu nav et on le centre*/
 header nav {
