@@ -501,6 +501,7 @@ main {
     margin-left: -60px;
     text-decoration: none;
     width: 120px;
+    text-align: center;
 }
 #Events table:hover a {
     background-color: #ee7a36;
@@ -513,7 +514,9 @@ main {
     background-image: -webkit-linear-gradient(left, #ee7a36 0%, #eb495d 100%);
     background-image: linear-gradient(to right, #ee7a36 0%, #eb495d 100%);
 }
-
+#Events tfoot td{
+    padding-bottom: 25px;
+}
 
 
 #Events table img{
