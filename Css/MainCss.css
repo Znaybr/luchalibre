@@ -51,7 +51,8 @@ header>nav>ul>li{
 #bckg-index{
     background: url("../Image/background-index.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+
+
 
 }
 #Accueil-slider {
@@ -466,12 +467,10 @@ html {
     #Events table {
         width: 33.3333333%;
     }
-
-    #Events table:nth-child(3n+1) {
+    .grid-1-5:nth-child(3n+1) {
         clear: left;
     }
-
-    #Events table:nth-child(odd) {
+    .grid-1-5:nth-child(odd) {
         clear: none;
     }
 }
