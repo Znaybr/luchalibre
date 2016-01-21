@@ -46,7 +46,7 @@ header>a{
 
 header>nav>ul>li{
     margin-top: 13px;
-    font-family: bangers;
+    font-family: "bangers";
     font-size: 20px;
 }
 
@@ -765,7 +765,7 @@ figure>img:hover {
     display: inline-block;
     background-color: rgba(255,255,255,0.90);
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin:0 0 20px 40px;
 }
 
 #contacts h2{
@@ -777,7 +777,7 @@ figure>img:hover {
 }
 
 #contacts fieldset{
-    width: 90%;
+    width: 80%;
     margin: 0 auto 20px auto;
 }
 
@@ -896,14 +896,12 @@ figure>img:hover {
     padding: 10px;
 }
 
-
-
 /*-----------------------ASIDE--------------------*/
 #contacts aside{
     display: inline-block;
     vertical-align: top;
     width: 10%;
-    margin: -14% 0 0 2%;
+    margin: -10% 0 0 0;
     font-size: 150px;
     transform: rotate(90deg);
 }
@@ -913,5 +911,25 @@ figure>img:hover {
     color: #ee3826;
 }
 
+
+/***********************************************************/
+/**********************PAGE PRODUITS************************/
+/***********************************************************/
+
+
+/*-----------------------ASIDE--------------------*/
+#produits aside{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    margin: -14% 0 0 2%;
+    font-size: 150px;
+    transform: rotate(90deg);
+}
+
+#produits aside p{
+    font-family: "bangers";
+    color: #ee3826;
+}
 
 
