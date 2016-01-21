@@ -397,7 +397,7 @@ html {
     height: 100%;
 }
 
-*, *:before, *:after {
+#Events *, *:before, *:after {
     box-sizing: inherit;
 }
 
@@ -417,19 +417,19 @@ html {
     padding: 2.5em 0;
 }
 
-main {
+#Events main {
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
 }
 
-.group:after {
+#Events .group:after {
     content: "";
     display: table;
     clear: both;
 }
 
-table{
+#Events table{
     border: 2px solid #5d4e65;
     min-height: 400px;
     padding: 1.25em;
@@ -438,35 +438,35 @@ table{
     transition: all .2s ease-in-out;
 }
 @media screen and (min-width: 700px) {
-    table {
+    #Events table {
         float: left;
         width: 50%;
     }
-    table:nth-child(odd) {
+    #Events  table:nth-child(odd) {
         clear: left;
     }
 }
 @media screen and (min-width: 800px) {
-    table {
+    #Events  table {
         width: 33.3333333%;
     }
-    .grid-1-5:nth-child(3n+1) {
+    #Events  table:nth-child(3n+1) {
         clear: left;
     }
-    .grid-1-5:nth-child(odd) {
+    #Events  table:nth-child(odd) {
         clear: none;
     }
 }
 @media screen and (min-width: 1120px) {
-    table {
+    #Events table {
         width: 20%;
     }
-    table:nth-child(odd), table:nth-child(3n+1) {
+    #Events table:nth-child(odd), #Events table:nth-child(3n+1) {
         clear: none;
     }
 }
 
-table:hover {
+#Events table:hover {
     background-color: #53455b;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF53455B', endColorstr='#FF201D22');
@@ -482,7 +482,7 @@ table:hover {
     transform: scale(1.025);
     z-index: 2;
 }
-table:hover:before, table:hover:after {
+#Events table:hover:before, #Events table:hover:after {
     content: "";
     position: absolute;
     background-color: #f67d35;
@@ -498,10 +498,10 @@ table:hover:before, table:hover:after {
     bottom: -2px;
     width: 2px;
 }
-table:hover:before {
+#Events table:hover:before {
     left: -2px;
 }
-table:hover:after {
+#Events table:hover:after {
     right: -2px;
 }
 #Events table a {
@@ -518,7 +518,7 @@ table:hover:after {
     text-decoration: none;
     width: 120px;
 }
-table:hover a {
+#Events table:hover a {
     background-color: #ee7a36;
     *zoom: 1;
     filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFEE7A36', endColorstr='#FFEB495D');
@@ -532,7 +532,7 @@ table:hover a {
 
 
 
- table img{
+#Events  table img{
 
      height:auto;
      width: 100%;
