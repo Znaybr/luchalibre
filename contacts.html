@@ -52,10 +52,10 @@
                         <legend>Votre fréquentation du stade</legend>
                         <ul>
                             <li><!--deja venu-->
-                                <label for="venuoui">Je suis déjà venu</label>
                                 <input type="radio" name="radiovenu" id="venuoui">
-                                <label for="venunon">Je ne suis jamais venu</label>
+                                <label for="venuoui">Je suis déjà venu</label>
                                 <input type="radio" name="radiovenu" id="venunon">
+                                <label for="venunon">Je ne suis jamais venu</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -63,23 +63,41 @@
                     <fieldset><!--TROISIEME FIELDSET-->
                         <legend>Vos préférences de fan</legend>
                         <ul>
-                            <li><!--lutteur prefere-->
-                                <input type="checkbox" id="lutteur1" name="lutteurs" />
-                                <label for="lutteur1">lutteur1</label>
-                                <input type="checkbox" id="lutteur2" name="lutteurs" />
-                                <label for="lutteur2">lutteur1</label>
-                                <input type="checkbox" id="lutteur3" name="lutteurs" />
-                                <label for="lutteur3">lutteur1</label>
-                                <input type="checkbox" id="lutteur4" name="lutteurs" />
-                                <label for="lutteur4">lutteur1</label>
-                                <input type="checkbox" id="lutteur5" name="lutteurs" />
-                                <label for="lutteur5">lutteur1</label>
-                                <input type="checkbox" id="lutteur6" name="lutteurs" />
-                                <label for="lutteur6">lutteur1</label>
+                            <li><!--lutteur préféré-->
+                                <figure>
+                                    <img src="Image/luchador1.png">
+                                    <input type="checkbox" id="lutteur1" name="lutteurs" />
+                                    <figcaption><label for="lutteur1">STUKA EL GALLO</label></figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="Image/luchador2.png">
+                                    <input type="checkbox" id="lutteur2" name="lutteurs" />
+                                    <figcaption><label for="lutteur2">MALO CASAS</label></figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="Image/luchador3.png">
+                                    <input type="checkbox" id="lutteur3" name="lutteurs" />
+                                    <figcaption><label for="lutteur3">SANGRE AZTECA</label></figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="Image/luchador4.png">
+                                    <input type="checkbox" id="lutteur4" name="lutteurs" />
+                                    <figcaption><label for="lutteur4">AVERNO</label></figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="Image/luchador5.png">
+                                    <input type="checkbox" id="lutteur5" name="lutteurs" />
+                                    <figcaption><label for="lutteur5">MEPHISTO</label></figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="Image/luchador6.png">
+                                    <input type="checkbox" id="lutteur6" name="lutteurs" />
+                                    <figcaption><label for="lutteur6">GALLO LOCO</label></figcaption>
+                                </figure>
                             </li>
 
-                            <li><!--tenue preferee-->
-                                <label for="tenue">Quelle est ta tenue preferee sur le ring?</label>
+                            <li><!--tenue préférée-->
+                                <label for="tenue">Quelle est ta tenue préférée sur le ring?</label>
                                 <input list="liste-tenues" type="text" id="tenue" name="tenue">
                                 <datalist id="liste-tenues">
                                     <option>cagoule, short</option>
@@ -90,7 +108,7 @@
 
                             <li><!--message-->
                                 <label for="message">Votre message</label>
-                                <textarea rows="10" cols="10" name="message" id="message"></textarea>
+                                <textarea rows="10" cols="50" name="message" id="message"></textarea>
                             </li>
                         </ul>
                     </fieldset>
@@ -100,7 +118,7 @@
                             <input type="submit" value="Soumettre"/>
                         </li>
                         <li><!--re initialisé-->
-                            <input type="reset" value="re-initialiser"/>
+                            <input type="reset" value="Re-initialiser"/>
                         </li>
                     </ul>
                 </form>
