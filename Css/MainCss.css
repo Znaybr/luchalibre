@@ -1,3 +1,9 @@
+/*settings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /*----------------------------------------------------DESIGN Du Header--------------------------------------------------------------------------------------*/
 /*On defini une largeur maximum pour le menu nav et on le centre*/
 header nav {
@@ -21,6 +27,7 @@ header nav  li  a {
     padding-left: 30px;
     padding-right: 30px;
 }
+
 
 
 
@@ -345,9 +352,8 @@ header nav  li  a {
 }
 /*----------------------------------------------------Design du Footer----------------------------------------------------------------------------------------*/
 /*------------lien de page du footer--------*/
-footer nav {
+footer {
     width: 100%;
-
 
     background-color: #cda100;
 }
@@ -355,10 +361,18 @@ footer nav {
 footer nav  li {
     display: block;
   padding-bottom: 5px;
-
+  padding-left: 5px;
 
 }
 
+footer div{
+    display: inline-block;
+    float: right;
+
+}
+footer nav{
+    display: inline-block;
+}
 /*-----------------reseau sociaux du footer---------------------*/
 
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
@@ -369,6 +383,60 @@ footer nav  li {
     background-size: cover;
 }
 
+footer div li{
+    text-align: right;
+    display: inline-block;
+}
+/*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
+main{
+    margin-left: 10%;
+}
+table, th, tr, td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+table {
+    margin-top: 5%;
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 2%;
+}
+/*effet d'animation---------*/
+
+table:hover{
+
+}
+
+table a{
+
+    background-color: #2838aa;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.75em 1.5em;
+
+    bottom: 1.25em;
+
+
+    text-decoration: none;
+    width: 120px;;
+}
+table a:hover{
+
+}
+
+
+ table img{
+
+     height:250px;
+     width: 100%;
+}
+
+
+    /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #luchador{
     font-family: "bangers";
 
