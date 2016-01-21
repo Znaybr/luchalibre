@@ -413,10 +413,7 @@ footer>nav>ul{
 
 /*-----------------reseau sociaux du footer---------------------*/
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
-@font-face {
-    font-family: Lato;
-    src: url(lato/Lato-Medium.ttf);
-}
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -925,7 +922,7 @@ figure>img:hover {
     display: inline-block;
     vertical-align: top;
     width: 10%;
-    margin: -14% 0 0 2%;
+    margin: -10% 0 0 0;
     font-size: 150px;
     transform: rotate(90deg);
 }
@@ -934,5 +931,6 @@ figure>img:hover {
     font-family: "bangers";
     color: #ee3826;
 }
+
 
 
