@@ -35,10 +35,10 @@ main{
     padding-top: 40px;
 }
 /*----positionnement du logo dans menu-----*/
-header>a{
+#Events header>a{
     position: absolute;
     left: 700px;
-    top: 30px;
+    top: 70px;
     z-index: 1;
 }
 
@@ -570,6 +570,12 @@ html {
 
     height:auto;
     width: 100%;
+}
+#Events header>a{
+    position: absolute;
+    left: 700px;
+    top: 70px;
+    z-index: 1;
 }
 #Events footer{
     margin-top: 50%;
