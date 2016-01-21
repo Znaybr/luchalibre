@@ -69,7 +69,7 @@ header>nav>ul>li{
 }
 
 #Accueil-slider.fullscreen {
-   background:black;
+    background:black;
 }
 
 #Accueil-slider .fs-icon {
@@ -228,7 +228,7 @@ header>nav>ul>li{
 /* ---------fleche buttons ------- */
 #Accueil-slider-pause-play { display:none;}
 
-    #Accueil-slider-prev, #Accueil-slider-next
+#Accueil-slider-prev, #Accueil-slider-next
 {
     position: absolute;
     display:inline-block;
@@ -259,7 +259,7 @@ header>nav>ul>li{
     transform:scale(1,1.3);
     /*border:1px solid white;*/
 }
-    #Accueil-slider-prev:hover, #Accueil-slider-next:hover {
+#Accueil-slider-prev:hover, #Accueil-slider-next:hover {
     opacity:1;
 
 }
@@ -388,7 +388,7 @@ footer nav {
 /*on met les elements du menu en display inline-block*/
 footer nav  li {
     display: inline-block;
-  padding-bottom: 5px;
+    padding-bottom: 5px;
 
 
 }
@@ -396,8 +396,8 @@ footer nav  li {
 
 /*on espace les elements du menu bas de page*/
 footer nav  li  a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 footer>nav>ul{
@@ -405,12 +405,7 @@ footer>nav>ul{
     float: left;
     font-family: bangers;
     font-size: 20px;
-    display: block;
 }
-
-
-
-
 /*-----------------reseau sociaux du footer---------------------*/
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
 
@@ -713,9 +708,9 @@ figure>img:hover {
 
 @keyframes shake {
     0% {
-         transform: rotate(0.5deg);
+        transform: rotate(0.5deg);
 
-     }
+    }
     12.5% {
         transform: rotate(-0.5deg);
 
