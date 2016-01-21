@@ -42,6 +42,8 @@ header>a{
 
 header>nav>ul>li{
     margin-top: 13px;
+    font-family: bangers;
+    font-size: 20px;
 }
 
 
@@ -49,7 +51,6 @@ header>nav>ul>li{
 #bckg-index{
     background: url("../Image/background-index.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
 
 
 
@@ -399,6 +400,8 @@ footer nav  li  a {
 footer>nav>ul{
     width: 600px;
     float: left;
+    font-family: bangers;
+    font-size: 20px;
 }
 /*-----------------reseau sociaux du footer---------------------*/
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
@@ -554,9 +557,11 @@ html {
     height:auto;
     width: 100%;
 }
-#Events footer {
-    margin-top: 45%;
+#Events footer{
+    margin-top: 50%;
+
 }
+
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #bck_lutteurs{
     background: url("../Image/background-lutteurs.jpg");
@@ -586,10 +591,10 @@ html {
     background-color: #cccccc;
     border-radius: 10px;
     height: 196px;
-    width: 1000px;
+    width: 1100px;
     margin:40px;
     position: relative;
-    right: 585px;
+    right: 800px;
 
 }
 
@@ -604,7 +609,7 @@ html {
 }
 
 #luchador>ul>li>img{
-    width: 11.5%;
+    width: 10.5%;
     float:right;
     border-radius: 5%;
 }
@@ -614,7 +619,7 @@ html {
 }
 #luchador>ul>li>h2{
     width: 300px;
-    margin-left: 220px;
+    margin-left: 400px;
     font-size: 50px;
 
 
@@ -623,17 +628,17 @@ html {
 
 
 #luchador>ul>li>a{
-    margin-left: 220px;
+    margin-left: 400px;
 
 
 }
 #luchador>p{
     color:red;
     transform: rotate(90deg);
-    font-size: 200px;
-    margin-top: -1150px;
+    font-size: 145px;
+    margin-top: -1300px;
     right: 0px;
-    position: absolute;
+    position: fixed;
 
 
 }
@@ -645,7 +650,7 @@ html {
     0% {transform: translate(0px);
 
     }
-    25% {transform: translate(320px);
+    25% {transform: translate(500px);
 
     }
     50% {transform: translate(300px);
