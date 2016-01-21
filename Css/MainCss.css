@@ -631,7 +631,9 @@ html {
     color:red;
     transform: rotate(90deg);
     font-size: 200px;
-   /* margin-top: -1000px;*/
+    margin-top: -1150px;
+    right: 0px;
+    position: absolute;
 
 
 }
