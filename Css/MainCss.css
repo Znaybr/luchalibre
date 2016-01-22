@@ -71,6 +71,91 @@ header nav li {
     font-size: 20px;
 }
 
+
+
+/*-------------------------------FOOTER--------------------------------------*/
+
+footer nav {
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    height: 95px;
+    background-color: rgba(221, 210, 177,0.8);
+    background: -moz-linear-gradient(left, rgba(221,210,177,0) 0%, rgba(221,210,177,1) 20%, rgba(221,210,177,1) 80%, rgba(221,210,177,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddd2b1', endColorstr='#00ddd2b1',GradientType=1 ); /* IE6-9 */
+}
+
+footer > nav > ul:nth-of-type(1){
+    width: 200px;
+    font-size: 12px;
+    bottom:0;
+    margin: 0 10% 0 10% ;
+    padding: 0;
+    border-right: 1px solid #ee3826;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer nav li {
+    padding-bottom: 5px;
+    list-style-type: none;
+    text-align: left;
+}
+
+/*on espace les elements du menu bas de page*/
+footer nav li a {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #ee3826;
+    text-decoration: none;
+    font-family: "bangers";
+}
+
+footer nav li a:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #17bcb6;
+    text-decoration: none;
+}
+
+footer nav > div {
+    width: 200px;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #ee3826;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer nav > div p{
+    font-family: "bangers";
+
+}
+
+footer > nav > ul:nth-of-type(2){
+    width: 150px;
+    bottom:0;
+    margin: 0 10% 0 10% ;
+    padding: 0;
+    border-left: 1px solid #ee3826;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer > nav > ul:nth-of-type(2) a > img{
+    width:40px;
+}
+
+footer > nav > ul:nth-of-type(2) li{
+    display: inline-block;
+    width: 60px;
+}
+
+
 main{
     padding-top: 40px;
 }
@@ -398,66 +483,10 @@ main{
         display:none;
     }
 }
-/*----------------------------------------------------Design du Footer----------------------------------------------------------------------------------------*/
-
-/*------------lien de page du footer--------*/
-
-footer nav {
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    background-color: rgba(221, 210, 177,0.8);
-    background: -moz-linear-gradient(left, rgba(221,210,177,0) 0%, rgba(221,210,177,1) 20%, rgba(221,210,177,1) 80%, rgba(221,210,177,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddd2b1', endColorstr='#00ddd2b1',GradientType=1 ); /* IE6-9 */
-
-}
-
-/*on met les elements du menu en display inline-block*/
-footer nav  li {
-    display: inline-block;
-    padding-bottom: 5px;
 
 
-
-}
-
-
-/*on espace les elements du menu bas de page*/
-footer nav  li  a {
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: "bangers";
-}
-
-footer>nav>ul{
-    width: 600px;
-    float: left;
-    font-family: bangers;
-    font-size: 20px;
-}
-footer>nav{
-    display: inline-block;
-    text-align: center;
-}
-
-#social>li>a>img{
-    width:40px;
-
-}
-#social>li>{
-
-    float: right;
-
-}
-/*-----------------reseau sociaux du footer---------------------*/
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
 
-html {
-    box-sizing: border-box;
-    height: 100%;
-}
 
 #Events *, *:before, *:after {
     box-sizing: inherit;
@@ -796,8 +825,6 @@ html {
     height: 500px;
     display: inline-block;
 
-
-
 }
 #luch-info>section>article{
     display: inline-block;
@@ -805,25 +832,20 @@ html {
     left:700px;
     top:300px;
 
-
 }
 
 #details>section>figure{
     width:200px;
     display: inline-block;
-
 }
 
 
 #luch-info>section>article{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     float: right;
-
-
-
-
-
+    display: inline-block;
+    margin-top: 50px;
 }
 #luch-info>section>article>p{
     font-family: bangers;
