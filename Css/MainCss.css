@@ -625,7 +625,7 @@ html {
     margin-left: 20px;
     background: -webkit-linear-gradient(#eee, #333);
     font-size: 40px;
-    width:32%;
+    width:500px;
     font-family: "bangers";
 }
 
@@ -711,6 +711,70 @@ html {
     100% {transform: translate(0px);
 
     }
+
+}
+
+@media only screen and (max-width:960px) {
+
+    #luchador>h1{
+        font-size: 30px;
+        width:360px;
+
+    }
+    #luchador>ul>li{
+        background-color: #cccccc;
+        border-radius: 10px;
+        height: 170px;
+        width: 1000px;
+        margin:40px;
+        position: relative;
+        right: 950px;
+
+
+}
+    #luchador>ul>li>img {
+        width: 10%;
+        float: right;
+        border-radius: 5%;
+    }
+    #luchador>ul>li>h2{
+        width: 300px;
+        margin-left: 500px;
+        font-size: 40px;
+
+
+
+    }
+    #luchador>ul>li>a {
+        margin-left: 500px;
+    }
+
+    @media only screen and (max-width:660px) {
+
+    #luchador>h1{
+        font-size: 20px;
+        width:300px;
+
+    }
+    @keyframes deplacement {
+        0% {transform: translate(0px);
+
+        }
+        25% {transform: translate(230px);
+
+        }
+        50% {transform: translate(175px);
+
+        }
+        100% {transform: translate(0px);
+
+        }
+
+    }
+        #luchador>ul>li>h2{
+            width: 600px;
+            margin-left: 300px;
+            font-size: 40px;
 
 }
 
