@@ -712,19 +712,6 @@ footer > nav > ul:nth-of-type(2) li{
 
 }
 
-#Events aside{
-    display: inline-block;
-    vertical-align: top;
-    width: 10%;
-    font-size: 150px;
-}
-
-#Events aside p{
-    font-family: "bangers";
-    color: #ee3826;
-    margin: 0;
-    transform: rotate(90deg);
-}
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #bck_lutteurs{
     background: url("../Image/background-lutteurs.jpg");
@@ -910,29 +897,32 @@ footer > nav > ul:nth-of-type(2) li{
 
 /*---------------------------------------------style pages details------------------------------------------------*/
 
-
 #details{
-    width:620px;
-    display: inline-block;
+
     color: black;
-    text-shadow:  10px 7px 0 rgba(180, 58, 58, 0.82);
+    text-shadow:  5px 3px 0 rgba(180, 58, 58, 0.82);
 
 
 }
 
-#luch-info{
-    margin-left: 60%;
-    width: 900px;
-    height: 500px;
-    display: inline-block;
+#details section{
+    margin-left: 26%;
+
 
 }
-#luch-info>section>article{
+#details>section>article{
     display: inline-block;
-    position: absolute;
-    left:700px;
-    top:300px;
+    padding-right: 80px;
+    padding-left: 20px;
+    vertical-align: top;
+    font-weight: bold;
+    margin-top: 50px;
 
+
+}
+
+#details>section>article>p{
+    font-size: 120%;
 }
 
 #details>section>figure{
@@ -940,14 +930,6 @@ footer > nav > ul:nth-of-type(2) li{
     display: inline-block;
 }
 
-
-#luch-info>section>article{
-    font-weight: bold;
-    font-size: 20px;
-    float: right;
-    display: inline-block;
-    margin-top: 50px;
-}
 #luch-info>section>article>p{
     font-family: bangers;
 
@@ -967,6 +949,7 @@ footer > nav > ul:nth-of-type(2) li{
 #details figure>img{
     border-radius: 10px;
     margin-top: 5px;
+
 }
 #details figure>img:hover {
     animation-name: shake;
@@ -1012,7 +995,66 @@ footer > nav > ul:nth-of-type(2) li{
 }
 
 @media only screen and (max-width:960px) {
+
+    #details section {
+        margin-left: 30%;
+    }
+
+
+    #details section figure figcaption{
+        width: calc((100% - 300px) / 2);
+    }
+
+    #details>section>article>p{
+        font-size: 120%;
+
+    }
+
+    #details>section>article{
+        margin-top: 20px;
+       display: block;
+        padding-bottom: 20px;
+
+    }
+    #details figure>img{
+        display: block;
+
+
+
+    }
 }
+
+@media only screen and (max-width:660px) {
+
+    #details section {
+        margin-left: 30%;
+    }
+
+
+    #details section figure figcaption{
+        width: calc((100% - 300px) / 2);
+    }
+
+    #details>section>article>p{
+        font-size: 100%;
+
+    }
+
+    #details>section>article{
+        margin-top: 20px;
+        display: block;
+        padding-bottom: 20px;
+
+    }
+    #details figure>img{
+        display: block;
+        width:80%;
+
+
+
+    }
+}
+
 
 
 /**********************************************************************************************/
