@@ -35,10 +35,10 @@ main{
     padding-top: 40px;
 }
 /*----positionnement du logo dans menu-----*/
-header>a{
+#Events header>a{
     position: absolute;
     left: 700px;
-    top: 30px;
+    top: 70px;
     z-index: 1;
 }
 
@@ -69,7 +69,7 @@ header>nav>ul>li{
 }
 
 #Accueil-slider.fullscreen {
-   background:black;
+    background:black;
 }
 
 #Accueil-slider .fs-icon {
@@ -228,7 +228,7 @@ header>nav>ul>li{
 /* ---------fleche buttons ------- */
 #Accueil-slider-pause-play { display:none;}
 
-    #Accueil-slider-prev, #Accueil-slider-next
+#Accueil-slider-prev, #Accueil-slider-next
 {
     position: absolute;
     display:inline-block;
@@ -259,7 +259,7 @@ header>nav>ul>li{
     transform:scale(1,1.3);
     /*border:1px solid white;*/
 }
-    #Accueil-slider-prev:hover, #Accueil-slider-next:hover {
+#Accueil-slider-prev:hover, #Accueil-slider-next:hover {
     opacity:1;
 
 }
@@ -351,7 +351,7 @@ header>nav>ul>li{
 }
 
 
-/*------ Responsive settings du slider  ------*/
+/*------ Responsive settings du slider  -----------------------------*/
 @media only screen and (max-width:950px){
 
     #Accueil-slider-prev {
@@ -388,7 +388,7 @@ footer nav {
 /*on met les elements du menu en display inline-block*/
 footer nav  li {
     display: inline-block;
-  padding-bottom: 5px;
+    padding-bottom: 5px;
 
 
 }
@@ -396,8 +396,8 @@ footer nav  li {
 
 /*on espace les elements du menu bas de page*/
 footer nav  li  a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 footer>nav>ul{
@@ -405,12 +405,21 @@ footer>nav>ul{
     float: left;
     font-family: bangers;
     font-size: 20px;
-    display: block;
+}
+footer>nav{
+    display: inline-block;
+    text-align: center;
 }
 
+#social>li>a>img{
+    width:40px;
 
+}
+#social>li>{
 
+    float: right;
 
+}
 /*-----------------reseau sociaux du footer---------------------*/
 /*--------------------------------------------------------style de la page Events----------------------------------------------------------------------------*/
 
@@ -435,7 +444,7 @@ html {
     font-family: bangers, sans-serif;
     font-size: 100%;
     min-height: 100%;
-    line-height: 1.5;
+    line-height: 1.45;
     padding: 2.5em 0;
 }
 
@@ -562,6 +571,12 @@ html {
     height:auto;
     width: 100%;
 }
+#Events header>a{
+    position: absolute;
+    left: 700px;
+    top: 70px;
+    z-index: 1;
+}
 #Events footer{
     margin-top: 50%;
 
@@ -639,11 +654,12 @@ html {
 }
 #luchador>p{
     color:red;
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    margin: -95% 0 0 1000px;
+    font-size: 130px;
     transform: rotate(90deg);
-    font-size: 145px;
-    margin-top: -1100px;
-    right: 0px;
-    position: fixed;
 
 
 }
@@ -713,9 +729,9 @@ html {
 
 @keyframes shake {
     0% {
-         transform: rotate(0.5deg);
+        transform: rotate(0.5deg);
 
-     }
+    }
     12.5% {
         transform: rotate(-0.5deg);
 
