@@ -636,6 +636,19 @@ main{
 
 }
 
+#Events aside{
+    display: inline-block;
+    vertical-align: top;
+    width: 10%;
+    font-size: 150px;
+}
+
+#Events aside p{
+    font-family: "bangers";
+    color: #ee3826;
+    margin: 0;
+    transform: rotate(90deg);
+}
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #bck_lutteurs{
     background: url("../Image/background-lutteurs.jpg");
