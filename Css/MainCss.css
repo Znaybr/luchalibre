@@ -692,7 +692,7 @@ html {
     margin-top: 50px;
 }
 
-figcaption{
+#details figcaption{
 
     font-size: 25px;
     text-align: center;
@@ -700,11 +700,11 @@ figcaption{
 
 
 }
-figure>img{
+#details figure>img{
     border-radius: 10px;
     margin-top: 10px;
 }
-figure>img:hover {
+#details figure>img:hover {
     animation-name: shake;
     animation-duration: 0.5s;
     animation-delay: 0s;
@@ -901,14 +901,14 @@ figure>img:hover {
     display: inline-block;
     vertical-align: top;
     width: 10%;
-    margin: -10% 0 0 0;
     font-size: 150px;
-    transform: rotate(90deg);
 }
 
 #contacts aside p{
     font-family: "bangers";
     color: #ee3826;
+    margin: 0;
+    transform: rotate(90deg);
 }
 
 
@@ -916,21 +916,81 @@ figure>img:hover {
 /**********************PAGE PRODUITS************************/
 /***********************************************************/
 
+/*----------------Définition globale de la page------------*/
+#infos{
+    background-image: url("../Image/background-forfaitst.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----------------------SECTION--------------------*/
+#infos section{
+    width: 85%;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.90);
+    border-radius: 4px;
+    margin:0 0 20px 40px;
+}
+
+#infos h2{
+    text-align: center;
+}
+
+#infos section img{
+    width: 350px;
+    height: 350px;
+}
+#infos section li {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    float: left;
+    margin: 30px 30px 30px 0;}
+
+#infos section p {
+    height: 350px;
+    padding: 0 10px;
+    opacity: .8;
+    color: #fff;
+    background: #000;
+    -webkit-transition: margin-top .2s ease-out;
+    -moz-transition: margin-top .2s ease-out;
+    transition: margin-top .2s ease-out;}
+
+#infos li:hover p {
+    margin-top: -355px;
+    padding-top: 150px;
+}
+
+#infos li p strong{
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    display: block;
+}
+
+#infos li p span{
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
 
 /*-----------------------ASIDE--------------------*/
-#produits aside{
+#infos aside{
     display: inline-block;
     vertical-align: top;
     width: 10%;
-    margin: -10% 0 0 0;
     font-size: 150px;
-    transform: rotate(90deg);
 }
 
-#produits aside p{
+#infos aside p{
     font-family: "bangers";
     color: #ee3826;
+    margin: 0;
+    transform: rotate(90deg);
+
 }
-
-
-
