@@ -899,7 +899,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 #details{
 
-    color: black;
+    color: #fff84e;
     text-shadow:  5px 3px 0 rgba(180, 58, 58, 0.82);
 
 
@@ -923,8 +923,13 @@ footer > nav > ul:nth-of-type(2) li{
 
 #details>section>article>p{
     font-size: 120%;
+    letter-spacing: 1px;
 
 }
+#details>section>article>meter {
+    margin-left: 30px;
+}
+
 
 #details>section>figure{
     width:200px;
