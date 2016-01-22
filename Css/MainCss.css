@@ -474,7 +474,6 @@ html {
     font-size: 100%;
     min-height: 100%;
     line-height: 1.45;
-    padding: 2.5em 0;
 }
 
 #Events main {
@@ -600,12 +599,7 @@ html {
     height:auto;
     width: 100%;
 }
-#Events header>a{
-    position: absolute;
-    left: 700px;
-    top: 70px;
-    z-index: 1;
-}
+
 #Events footer{
     margin-top: 50%;
 
@@ -846,11 +840,11 @@ html {
     color: #ee3826;
 }
 
-#contacts ul{
+#contacts main ul{
     text-align: center;
 }
 
-#contacts ul, input{
+#contacts main ul, input{
     list-style: none;
     padding: 0;
 }
@@ -860,7 +854,7 @@ html {
     padding: 2px;
 }
 
-#contacts ul label{
+#contacts main ul label{
     display: inline-block;
     text-align: left;
 }
