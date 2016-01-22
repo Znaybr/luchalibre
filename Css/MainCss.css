@@ -541,7 +541,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 
 /*------ Responsive settings du slider  -----------------------------*/
-@media only screen and (max-width:950px){
+@media only screen and (max-width:960px){
 
     #Accueil-slider-prev {
         left: -12px;
@@ -552,7 +552,7 @@ footer > nav > ul:nth-of-type(2) li{
     }
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:640px){
 
     #Accueil-slider-prev, #Accueil-slider-next, #Accueil-slider-pager {
         display:none;
@@ -602,7 +602,7 @@ footer > nav > ul:nth-of-type(2) li{
     text-align: center;
     transition: all .2s ease-in-out;
 }
-@media screen and (min-width: 700px) {
+@media only screen and (min-width: 640px) {
     #Events table {
         float: left;
         width: 50%;
@@ -611,7 +611,7 @@ footer > nav > ul:nth-of-type(2) li{
         clear: left;
     }
 }
-@media screen and (min-width: 800px) {
+@media only screen and (min-width:641px) and (max-width:960px) {
     #Events table {
         width: 33.3333333%;
     }
@@ -622,7 +622,7 @@ footer > nav > ul:nth-of-type(2) li{
         clear: none;
     }
 }
-@media screen and (min-width: 1120px) {
+@media only screen and (min-width: 961px) {
     #Events table {
         width: 20%;
     }
@@ -711,6 +711,20 @@ footer > nav > ul:nth-of-type(2) li{
 
 }
 
+/*#Events aside{*/
+
+    /*vertical-align: top;*/
+    /*width: 10%;*/
+    /*font-size: 9.375em;*/
+    /*display: none;*/
+/*}*/
+
+/*#Events aside p{*/
+    /*font-family: "bangers";*/
+    /*color: #ee3826;*/
+    /*margin: 0;*/
+    /*transform: rotate(90deg);*/
+/*}*/
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #bck_lutteurs{
     background: url("../Image/background-lutteurs.jpg");
