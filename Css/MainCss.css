@@ -794,7 +794,7 @@ footer > nav > ul:nth-of-type(2) li{
     margin: -95% 0 -20% 1000px;
     font-size: 130px;
     transform: rotate(90deg);
-    font-family: "bangers";
+
 
 
 }
@@ -922,6 +922,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 #details>section>article>p{
     font-size: 120%;
+
 }
 
 #details>section>figure{
@@ -929,7 +930,7 @@ footer > nav > ul:nth-of-type(2) li{
     display: inline-block;
 }
 
-#luch-info>section>article>p{
+#details>section>article>p{
     font-family: bangers;
 
 }
