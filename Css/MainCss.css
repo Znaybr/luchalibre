@@ -745,67 +745,79 @@ main{
 
 @media only screen and (max-width:960px) {
 
-    #luchador>h1{
+    #luchador > h1 {
         font-size: 30px;
-        width:360px;
+        width: 360px;
 
     }
-    #luchador>ul>li{
+
+    #luchador > ul > li {
         background-color: #cccccc;
         border-radius: 10px;
         height: 170px;
         width: 1000px;
-        margin:40px;
+        margin: 40px;
         position: relative;
         right: 950px;
 
+    }
 
-}
-    #luchador>ul>li>img {
+    #luchador > ul > li > img {
         width: 10%;
         float: right;
         border-radius: 5%;
     }
-    #luchador>ul>li>h2{
+
+    #luchador > ul > li > h2 {
         width: 300px;
         margin-left: 500px;
         font-size: 40px;
 
-
-
     }
-    #luchador>ul>li>a {
+
+    #luchador > ul > li > a {
         margin-left: 500px;
     }
+}
 
     @media only screen and (max-width:660px) {
 
-    #luchador>h1{
-        font-size: 20px;
-        width:300px;
-
-    }
-    @keyframes deplacement {
-        0% {transform: translate(0px);
-
-        }
-        25% {transform: translate(230px);
-
-        }
-        50% {transform: translate(175px);
-
-        }
-        100% {transform: translate(0px);
+        #luchador > h1 {
+            font-size: 20px;
+            width: 300px;
 
         }
 
-    }
-        #luchador>ul>li>h2{
+        @keyframes deplacement {
+            0% {
+                transform: translate(0px);
+
+            }
+            25% {
+                transform: translate(230px);
+
+            }
+            50% {
+                transform: translate(175px);
+
+            }
+            100% {
+                transform: translate(0px);
+
+            }
+
+        }
+        #luchador > ul > li > h2 {
             width: 600px;
-            margin-left: 300px;
-            font-size: 40px;
+            margin-left: 660px;
+            font-size: 30px;
 
-}
+        }
+
+        #luchador > ul > li > a {
+            margin-left: 660px;
+        }
+    }
 
 /*---------------------------------------------style pages details------------------------------------------------*/
 
@@ -814,7 +826,7 @@ main{
     width:620px;
     display: inline-block;
     color: black;
-    text-shadow:  10px 7px 0px rgba(180, 58, 58, 0.82);
+    text-shadow:  10px 7px 0 rgba(180, 58, 58, 0.82);
 
 
 }
@@ -908,6 +920,9 @@ main{
         transform: rotate(-0.5deg);
 
     }
+}
+
+@media only screen and (max-width:960px) {
 }
 
 
