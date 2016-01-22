@@ -11,7 +11,16 @@ body {
     padding: 0;
 }
 
+main{
+    padding-top: 40px;
+}
+
+
+
+
+/*****************************************************************************/
 /*-------------------------------HEADER--------------------------------------*/
+/*****************************************************************************/
 
 header {
     position: relative;
@@ -71,9 +80,53 @@ header nav li {
     font-size: 20px;
 }
 
+header nav li:nth-of-type(2) {
+    margin-right: 50px;
+}
+
+header nav li:nth-of-type(3) {
+    margin-left: 50px;
+}
+
+/*-----------------------------------------------*/
+/*------------MENU HEADER RESPONSIVE-------------*/
+/*--------------------TABLETTE-------------------*/
+
+@media only screen and (max-width: 960px) {
+
+    header nav li:nth-of-type(2) {
+       margin-right: 60px;
+    }
+
+    header nav li:nth-of-type(3) {
+        margin-left: 60px;
+    }
+}
+
+/*-----------------------------------------------*/
+/*------------MENU HEADER RESPONSIVE-------------*/
+/*--------------------TELEPHONE------------------*/
+
+@media only screen and (max-width: 640px) {
+    header nav li {
+        font-size: 16px;
+    }
+
+    header > a > img{
+        width: 180px;
+    }
+}
 
 
+
+
+/*****************************************************************************/
 /*-------------------------------FOOTER--------------------------------------*/
+/*****************************************************************************/
+
+footer{
+    margin-top: 20px;
+}
 
 footer nav {
     text-align: center;
@@ -88,7 +141,7 @@ footer nav {
 }
 
 footer > nav > ul:nth-of-type(1){
-    width: 200px;
+    width: 150px;
     font-size: 12px;
     bottom:0;
     margin: 0 10% 0 10% ;
@@ -124,8 +177,6 @@ footer nav > div {
     width: 200px;
     font-size: 12px;
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
     color: #ee3826;
     text-decoration: none;
     display: inline-block;
@@ -133,7 +184,6 @@ footer nav > div {
 
 footer nav > div p{
     font-family: "bangers";
-
 }
 
 footer > nav > ul:nth-of-type(2){
@@ -155,10 +205,36 @@ footer > nav > ul:nth-of-type(2) li{
     width: 60px;
 }
 
+/*-----------------------------------------------*/
+/*------------MENU HEADER RESPONSIVE-------------*/
+/*--------------------TABLETTE-------------------*/
 
-main{
-    padding-top: 40px;
+@media only screen and (max-width: 960px) {
+
+    footer > nav > ul:nth-of-type(1){
+        width: 100px;
+        text-align: left;
+        margin: 0 2% 0 5% ;
+    }
+
+    footer > nav > ul:nth-of-type(2){
+        width: 100px;
+        text-align: left;
+        margin: 0 5% 0 2% ;
+    }
+
+    footer > nav > ul:nth-of-type(2) li{
+        display: inline-block;
+        margin-top: 10px;
+        width: 40px;
+    }
+
+    footer > nav > ul:nth-of-type(2) a > img{
+        width:30px;
+    }
 }
+
+
 
 
 
