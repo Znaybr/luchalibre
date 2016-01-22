@@ -1,52 +1,81 @@
+/*****************************/
+/******STYLE GENERAL BODY*****/
+/*****************************/
 
+*{
+    font-family: 'Lato', sans-serif;
+}
 
-/*----------------------------------------------------DESIGN Du Header--------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------HEADER--------------------------------------*/
+
+header {
+    position: relative;
+    height: 100px;
+    top: 0;
+    padding-top: 75px;
+}
+
 /*On defini une largeur maximum pour le menu nav et on le centre*/
 header nav {
     width: 100%;
     height: 50px;
-    margin-top: 80px;
     text-align: center;
     background-color: rgba(221, 210, 177,0.8);
     background: -moz-linear-gradient(left, rgba(221,210,177,0) 0%, rgba(221,210,177,1) 20%, rgba(221,210,177,1) 80%, rgba(221,210,177,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(221,210,177,0) 0%,rgba(221,210,177,1) 20%,rgba(221,210,177,1) 80%,rgba(221,210,177,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ddd2b1', endColorstr='#00ddd2b1',GradientType=1 ); /* IE6-9 */
-
 }
 
+/*----LOGO-----*/
+header > a{
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+    position: absolute;
+    left: calc((100% - 200px) / 2);
+    top: 0;
+}
 
+header nav a{
+    text-decoration: none;
+    color: #ee3826;
+    font-family: "bangers";
+}
 
-/*on met les elements du menu en display inline-block*/
-header nav  li {
+header nav a:hover{
+    text-decoration: none;
+    color: #17bcb6;
+    font-family: "bangers";
+}
+
+header > a > img{
+    width: 200px;
+}
+
+/*----MENU-----*/
+header nav ul {
+    margin: 0;
+    padding: 14px;
+}
+
+header nav li {
+    width: calc(100% / 6);
     display: inline-block;
-    float: none;
-
-}
-
-/*on espace les elements du menu*/
-header nav  li  a {
-    padding-left: 150px;
-    padding-right: 150px;
-
+    font-family: "bangers";
+    font-size: 20px;
 }
 
 main{
     padding-top: 40px;
 }
-/*----positionnement du logo dans menu-----*/
-#Events header>a{
-    position: absolute;
-    left: 700px;
-    top: 70px;
-    z-index: 1;
-}
 
-header>nav>ul>li{
-    margin-top: 13px;
-    font-family: "bangers";
-    font-size: 20px;
-}
+
 
 
 /*--------------------------------------------------------------------------Style du slider--------------------------------------------------------------------*/
@@ -957,11 +986,13 @@ html {
 
 /*-----------------------SECTION--------------------*/
 #infos section{
+    text-align: center;
     width: 85%;
     display: inline-block;
     background-color: rgba(255,255,255,0.90);
     border-radius: 4px;
     margin:0 0 20px 40px;
+    padding: 20px 0 20px 0;
 }
 
 #infos h2{
@@ -972,12 +1003,20 @@ html {
     width: 350px;
     height: 350px;
 }
+
+#infos section ul {
+    display: inline-block;
+}
+
 #infos section li {
     width: 350px;
     height: 350px;
     overflow: hidden;
-    float: left;
-    margin: 30px 30px 30px 0;}
+}
+
+#infos section div{
+    text-align: center;
+}
 
 #infos section p {
     height: 350px;
@@ -987,7 +1026,8 @@ html {
     background: #000;
     -webkit-transition: margin-top .2s ease-out;
     -moz-transition: margin-top .2s ease-out;
-    transition: margin-top .2s ease-out;}
+    transition: margin-top .2s ease-out;
+}
 
 #infos li:hover p {
     margin-top: -355px;
@@ -999,16 +1039,15 @@ html {
     font-weight: 900;
     font-size: 24px;
     display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
 }
 
 #infos li p span{
+    padding-top: 10px;
     display: block;
     text-align: center;
 }
-
-
-
-
 
 
 /*-----------------------ASIDE--------------------*/
