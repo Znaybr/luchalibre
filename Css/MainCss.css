@@ -205,7 +205,7 @@ footer > nav > ul:nth-of-type(2) li{
 }
 
 /*-----------------------------------------------*/
-/*------------MENU HEADER RESPONSIVE-------------*/
+/*------------MENU FOOTER RESPONSIVE-------------*/
 /*--------------------TABLETTE-------------------*/
 
 @media only screen and (max-width: 960px) {
@@ -233,6 +233,16 @@ footer > nav > ul:nth-of-type(2) li{
     }
 }
 
+/*-----------------------------------------------*/
+/*------------MENU FOOTER RESPONSIVE-------------*/
+/*--------------------TELEPHONE-------------------*/
+
+@media only screen and (max-width: 640px) {
+
+
+
+}
+
 
 
 
@@ -240,7 +250,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 /*--------------------------------------------------------------------------Style du slider--------------------------------------------------------------------*/
 #bckg-index{
-    background: url("../Image/background-index.jpg");
+    background: url("../image/background-index.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: auto;
@@ -296,7 +306,7 @@ footer > nav > ul:nth-of-type(2) li{
 #Accueil-slider .slider-inner {
     max-width:800px;
     margin:0 auto;/*center-aligned */
-    font-size:0px;
+    font-size:0;
     position:relative;
     box-sizing:border-box;
 }
@@ -391,7 +401,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 /* notre boutton play*/
 .video-playbutton-layer {
-    background: transparent url(../Image/video-btn.png) no-repeat center center;
+    background: transparent url(../image/video-btn.png) no-repeat center center;
 }
 
 /* Pour les Iframe youtube ou vimeo */
@@ -442,7 +452,7 @@ footer > nav > ul:nth-of-type(2) li{
     cursor:pointer;
     font-family:sans-serif;
     font-size:11px;
-    cursor:pointer;
+    cursor: pointer;
     -webkit-transition:all 0.7s;
     transition:all 0.7s;
     -webkit-transform:scale(1,1.3);
@@ -664,12 +674,15 @@ footer > nav > ul:nth-of-type(2) li{
     bottom: -2px;
     width: 2px;
 }
+
 #Events table:hover:before {
     left: -2px;
 }
+
 #Events table:hover:after {
     right: -2px;
 }
+
 #Events table a {
     background-color: #9c83aa;
     border-radius: 20px;
@@ -685,6 +698,7 @@ footer > nav > ul:nth-of-type(2) li{
     width: 120px;
     text-align: center;
 }
+
 #Events table:hover a {
     background-color: #ee7a36;
     *zoom: 1;
@@ -696,13 +710,12 @@ footer > nav > ul:nth-of-type(2) li{
     background-image: -webkit-linear-gradient(left, #ee7a36 0%, #eb495d 100%);
     background-image: linear-gradient(to right, #ee7a36 0%, #eb495d 100%);
 }
+
 #Events tfoot td{
     padding-bottom: 25px;
 }
 
-
 #Events table img{
-
     height:auto;
     width: 100%;
 }
@@ -729,7 +742,7 @@ footer > nav > ul:nth-of-type(2) li{
 /*}*/
 /*------------------------------------------style gallerie luchador--------------------------------------------------------*/
 #bck_lutteurs{
-    background: url("../Image/background-lutteurs.jpg");
+    background: url("../image/background-lutteurs.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -737,8 +750,6 @@ footer > nav > ul:nth-of-type(2) li{
 
 #luchador{
     font-family: "bangers";
-
-
 }
 
 #luchador>h1{
@@ -763,7 +774,6 @@ footer > nav > ul:nth-of-type(2) li{
     position: relative;
     right: 800px;
     font-family: "bangers";
-
 }
 
 #luchador>ul>li:hover{
@@ -771,9 +781,6 @@ footer > nav > ul:nth-of-type(2) li{
     animation-duration: 10s ;
     animation-delay: 0s;
     animation-iteration-count: 1;
-
-
-
 }
 
 #luchador>ul>li>img{
@@ -781,27 +788,23 @@ footer > nav > ul:nth-of-type(2) li{
     float:right;
     border-radius: 5%;
 }
+
 #luchador>ul>li>img:hover {
     transform: scale(1.3);
-
 }
+
 #luchador>ul>li>h2{
     width: 300px;
     margin-left: 400px;
     font-size: 50px;
     font-family: "bangers";
-
-
 }
-
-
 
 #luchador>ul>li>a{
     margin-left: 400px;
     font-family: "bangers";
-
-
 }
+
 #luchador>p{
     color:red;
     display: inline-block;
@@ -810,10 +813,7 @@ footer > nav > ul:nth-of-type(2) li{
     margin: -110% 0 -20% 1000px;
     font-size: 130px;
     transform: rotate(90deg);
-    font-family: "bangers";
-
-
-
+    font-family: "bangers"
 }
 
 
@@ -840,7 +840,6 @@ footer > nav > ul:nth-of-type(2) li{
     #luchador > h1 {
         font-size: 30px;
         width: 360px;
-
     }
 
     #luchador > ul > li {
@@ -851,7 +850,6 @@ footer > nav > ul:nth-of-type(2) li{
         margin: 40px;
         position: relative;
         right: 950px;
-
     }
 
     #luchador > ul > li > img {
@@ -864,7 +862,6 @@ footer > nav > ul:nth-of-type(2) li{
         width: 300px;
         margin-left: 500px;
         font-size: 40px;
-
     }
 
     #luchador > ul > li > a {
@@ -914,38 +911,31 @@ footer > nav > ul:nth-of-type(2) li{
 /*---------------------------------------------style pages details------------------------------------------------*/
 
 #details{
-
     color: #fff84e;
     text-shadow:  5px 3px 0 rgba(180, 58, 58, 0.82);
-
-
 }
 
 #details section{
     margin-left: 26%;
-
-
 }
-#details>section>article{
+
+#details>section>article {
     display: inline-block;
     padding-right: 80px;
     padding-left: 20px;
     vertical-align: top;
     font-weight: bold;
     margin-top: 50px;
-
-
 }
 
 #details>section>article>p{
     font-size: 120%;
     letter-spacing: 1px;
-
 }
+
 #details>section>article>meter {
     margin-left: 30px;
 }
-
 
 #details>section>figure{
     width:200px;
@@ -954,25 +944,19 @@ footer > nav > ul:nth-of-type(2) li{
 
 #details>section>article>p{
     font-family: bangers;
-
 }
 
-
-
 #details figcaption{
-
     font-size: 30px;
     text-align: center;
     font-family: "bangers";
-
-
-
 }
+
 #details figure>img{
     border-radius: 10px;
     margin-top: 5px;
-
 }
+
 #details figure>img:hover {
     animation-name: shake;
     animation-duration: 0.5s;
@@ -1012,7 +996,6 @@ footer > nav > ul:nth-of-type(2) li{
     }
     100% {
         transform: rotate(-0.5deg);
-
     }
 }
 
@@ -1022,7 +1005,6 @@ footer > nav > ul:nth-of-type(2) li{
         margin-left: 30%;
     }
 
-
     #details section figure figcaption{
         width: calc((100% - 300px) / 2);
     }
@@ -1030,7 +1012,6 @@ footer > nav > ul:nth-of-type(2) li{
     #details>section>article>p{
         font-size: 120%;
         margin-left: 30px;
-
     }
 
     #details>section>article{
@@ -1041,9 +1022,6 @@ footer > nav > ul:nth-of-type(2) li{
     }
     #details figure>img{
         display: block;
-
-
-
     }
 }
 
@@ -1053,28 +1031,23 @@ footer > nav > ul:nth-of-type(2) li{
         margin-left: 30%;
     }
 
-
     #details section figure figcaption{
         width: calc((100% - 300px) / 2);
     }
 
     #details>section>article>p{
         font-size: 100%;
-
     }
 
     #details>section>article{
         margin-top: 20px;
         display: block;
         padding-bottom: 20px;
-
     }
+
     #details figure>img{
         display: block;
         width:80%;
-
-
-
     }
 }
 
@@ -1086,7 +1059,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 /*----------------Définition globale de la page------------*/
 #contacts{
-    background-image: url("../Image/background-contact.jpg");
+    background-image: url("../image/background-contact.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1298,7 +1271,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 /*----------------Définition globale de la page------------*/
 #infos{
-    background-image: url("../Image/background-forfaitst.jpg");
+    background-image: url("../image/background-forfaitst.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1325,7 +1298,6 @@ footer > nav > ul:nth-of-type(2) li{
 
 #infos section ul {
     padding: 0;
-
     display: inline-block;
 }
 
@@ -1384,7 +1356,6 @@ footer > nav > ul:nth-of-type(2) li{
     color: #ee3826;
     margin: 0;
     transform: rotate(90deg);
-
 }
 
 /*-----------------------------------------------*/
