@@ -252,7 +252,7 @@ footer > nav > ul:nth-of-type(2) li{
 #bckg-index{
     background: url("../image/background-index.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
 
 
 
@@ -312,7 +312,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 #Accueil-slider.fullscreen .slider-inner {
     width:100%;
-    max-width:950px;
+    max-width:948px;
 }
 
 #Accueil-slider ul {
