@@ -242,7 +242,8 @@ footer > nav > ul:nth-of-type(2) li{
 #bckg-index{
     background: url("../Image/background-index.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    height: auto;
 
 
 
@@ -708,6 +709,7 @@ footer > nav > ul:nth-of-type(2) li{
 
 #Events footer{
     margin-top: 50%;
+    clear: both;
 
 }
 
