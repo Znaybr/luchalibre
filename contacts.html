@@ -2,19 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Accueil</title>
-        <link rel="stylesheet" type="text/css" href="Css/MainCss.css">
+        <title>Contact</title>
+        <!--LIEN CSS-->
+        <link rel="stylesheet" href="css/maincss.css">
+        <!--LIEN TYPOS-->
         <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+        <!--LIEN FAVICON-->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Projet ISI : HTML5" />
+        <meta name="description" content="lucha libre, catch, mexique, luchiadore, lutteur" />
+        <meta name="robots" content="index" />
+
+        <!--/****VERSIONS ANTERIEURES IE9****/-->
+        <!--<link rel="stylesheet" href="css/fixe.css"/>-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
     </head>
+
     <body id="contacts">
     <header>
-        <a href="Index.html"><img src="Image/logo-solo.png"></a>
+        <a href="index.html"><img src="image/logo-solo.png"></a>
         <nav>
             <ul>
                 <li><a href="gallerie_lutteur.html">Luchadores</a></li>
-                <li><a href="Events.html">Eventos</a></li>
+                <li><a href="events.html">Eventos</a></li>
                 <li><a href="contacts.html">Contacto</a></li>
                 <li><a href="infos.html">Info</a></li>
             </ul>
@@ -23,135 +37,135 @@
         <!--main-->
         <main>
             <section>
-            <h2>Contáctenos</h2>
-                <form method="get" action="Index.html">
+                <h2>Contáctenos</h2>
+                    <form method="get" action="index.html">
 
-                    <fieldset> <!--PREMIER FIELDSET-->
-                        <legend>Su información personal</legend>
-                        <ul>
-                            <li><!--nom-->
-                                <label for="nom">Apellido<span>*</span></label>
-                                <input type="text" name="nom" id="nom" placeholder="Apellido" autofocus required />
+                        <fieldset> <!--PREMIER FIELDSET-->
+                            <legend>Su información personal</legend>
+                            <ul>
+                                <li><!--nom-->
+                                    <label for="nom">Apellido<span>*</span></label>
+                                    <input type="text" name="nom" id="nom" placeholder="Apellido" autofocus required />
+                                </li>
+                                <li><!--prenom-->
+                                    <label for="prenom">Nombre<span>*</span></label>
+                                    <input type="text" name="prenom" id="prenom" placeholder="Nombre" required />
+                                </li>
+                                <li><!--courriel-->
+                                    <label for="courriel">E-mail<span>*</span></label>
+                                    <input type="email" name="courriel" id="courriel" placeholder="ejemplo@ejemplo.com" />
+                                </li>
+                                <li><!--tel-->
+                                    <label for="tel">Teléfono</label>
+                                    <input type="tel" name="tel" id="tel" placeholder="opcional" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" />
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset><!--SECOND FIELDSET-->
+                            <legend>Su asistencia a los estadios</legend>
+                            <ul>
+                                <li><!--deja venu-->
+                                    <input type="radio" name="radiovenu" id="venuoui">
+                                    <label for="venuoui">Yo ya vine</label>
+                                    <input type="radio" name="radiovenu" id="venunon">
+                                    <label for="venunon">Nunca llegué</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset><!--TROISIEME FIELDSET-->
+                            <legend>Preferentemente del fan</legend>
+                            <ul>
+                                <li><!--lutteur préféré-->
+                                    <figure>
+                                        <img src="image/luchador1.png">
+                                        <input type="checkbox" id="lutteur1" name="lutteurs" />
+                                        <figcaption><label for="lutteur1">STUKA EL GALLO</label></figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="image/luchador2.png">
+                                        <input type="checkbox" id="lutteur2" name="lutteurs" />
+                                        <figcaption><label for="lutteur2">MALO CASAS</label></figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="image/luchador3.png">
+                                        <input type="checkbox" id="lutteur3" name="lutteurs" />
+                                        <figcaption><label for="lutteur3">SANGRE AZTECA</label></figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="image/luchador4.png">
+                                        <input type="checkbox" id="lutteur4" name="lutteurs" />
+                                        <figcaption><label for="lutteur4">AVERNO</label></figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="image/luchador5.png">
+                                        <input type="checkbox" id="lutteur5" name="lutteurs" />
+                                        <figcaption><label for="lutteur5">MEPHISTO</label></figcaption>
+                                    </figure>
+                                    <figure>
+                                        <img src="image/luchador6.png">
+                                        <input type="checkbox" id="lutteur6" name="lutteurs" />
+                                        <figcaption><label for="lutteur6">GALLO LOCO</label></figcaption>
+                                    </figure>
+                                </li>
+
+                                <li><!--tenue préférée-->
+                                    <label for="tenue">Ring traje prefieren?</label>
+                                    <input list="liste-tenues" type="text" id="tenue" name="tenue">
+                                    <datalist id="liste-tenues">
+                                        <option>cagoule, short</option>
+                                        <option>masque, debardeur, pantalon</option>
+                                        <option>masque, gants, short</option>
+                                    </datalist>
+                                </li>
+
+                                <li><!--message-->
+                                    <label for="message">Vuestro mensaje</label>
+                                    <textarea rows="10" cols="50" name="message" id="message"></textarea>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <ul><!--VALIDATION-->
+                            <li><!--soumettre-->
+                                <input type="submit" value="Enviar"/>
                             </li>
-                            <li><!--prenom-->
-                                <label for="prenom">Nombre<span>*</span></label>
-                                <input type="text" name="prenom" id="prenom" placeholder="Nombre" required />
-                            </li>
-                            <li><!--courriel-->
-                                <label for="courriel">E-mail<span>*</span></label>
-                                <input type="email" name="courriel" id="courriel" placeholder="ejemplo@ejemplo.com" />
-                            </li>
-                            <li><!--tel-->
-                                <label for="tel">Teléfono</label>
-                                <input type="tel" name="tel" id="tel" placeholder="opcional" pattern="^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" />
+                            <li><!--re initialisé-->
+                                <input type="reset" value="Reiniciar"/>
                             </li>
                         </ul>
-                    </fieldset>
-
-                    <fieldset><!--SECOND FIELDSET-->
-                        <legend>Su asistencia a los estadios</legend>
-                        <ul>
-                            <li><!--deja venu-->
-                                <input type="radio" name="radiovenu" id="venuoui">
-                                <label for="venuoui">Yo ya vine</label>
-                                <input type="radio" name="radiovenu" id="venunon">
-                                <label for="venunon">Nunca llegué</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-
-                    <fieldset><!--TROISIEME FIELDSET-->
-                        <legend>Preferentemente del fan</legend>
-                        <ul>
-                            <li><!--lutteur préféré-->
-                                <figure>
-                                    <img src="Image/luchador1.png">
-                                    <input type="checkbox" id="lutteur1" name="lutteurs" />
-                                    <figcaption><label for="lutteur1">STUKA EL GALLO</label></figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="Image/luchador2.png">
-                                    <input type="checkbox" id="lutteur2" name="lutteurs" />
-                                    <figcaption><label for="lutteur2">MALO CASAS</label></figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="Image/luchador3.png">
-                                    <input type="checkbox" id="lutteur3" name="lutteurs" />
-                                    <figcaption><label for="lutteur3">SANGRE AZTECA</label></figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="Image/luchador4.png">
-                                    <input type="checkbox" id="lutteur4" name="lutteurs" />
-                                    <figcaption><label for="lutteur4">AVERNO</label></figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="Image/luchador5.png">
-                                    <input type="checkbox" id="lutteur5" name="lutteurs" />
-                                    <figcaption><label for="lutteur5">MEPHISTO</label></figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="Image/luchador6.png">
-                                    <input type="checkbox" id="lutteur6" name="lutteurs" />
-                                    <figcaption><label for="lutteur6">GALLO LOCO</label></figcaption>
-                                </figure>
-                            </li>
-
-                            <li><!--tenue préférée-->
-                                <label for="tenue">Ring traje prefieren?</label>
-                                <input list="liste-tenues" type="text" id="tenue" name="tenue">
-                                <datalist id="liste-tenues">
-                                    <option>cagoule, short</option>
-                                    <option>masque, debardeur, pantalon</option>
-                                    <option>masque, gants, short</option>
-                                </datalist>
-                            </li>
-
-                            <li><!--message-->
-                                <label for="message">Vuestro mensaje</label>
-                                <textarea rows="10" cols="50" name="message" id="message"></textarea>
-                            </li>
-                        </ul>
-                    </fieldset>
-
-                    <ul><!--VALIDATION-->
-                        <li><!--soumettre-->
-                            <input type="submit" value="Enviar"/>
-                        </li>
-                        <li><!--re initialisé-->
-                            <input type="reset" value="Reiniciar"/>
-                        </li>
-                    </ul>
-                </form>
+                    </form>
             </section>
             <aside>
                 <p>Contacto</p>
             </aside>
         </main>
 
-    <footer>
-        <nav>
-            <ul> <!--HYPERLIENS-->
-                <li><a href="gallerie_lutteur.html">Luchadores</a></li>
-                <li><a href="Events.html">Eventos</a></li>
-                <li><a href="Index.html">Index</a></li>
-                <li><a href="contacts.html">Contacto</a></li>
-                <li><a href="#">Info</a></li>
-            </ul>
+        <footer>
+            <nav>
+                <ul> <!--HYPERLIENS-->
+                    <li><a href="gallerie_lutteur.html">Luchadores</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="contacts.html">Contacto</a></li>
+                    <li><a href="infos.html">Info</a></li>
+                </ul>
 
-            <div> <!--ADRESSE-->
-                <p>11612 Calle San Javier</p>
-                <p>Collinia San Pedro CP 64390</p>
-                <p>Zacatecas, ZAC</p>
-            </div>
+                <div> <!--ADRESSE-->
+                    <p>11612 Calle San Javier</p>
+                    <p>Collinia San Pedro CP 64390</p>
+                    <p>Zacatecas, ZAC</p>
+                </div>
 
-            <ul> <!--RESEAUX SOCIAUX-->
-                <li><a href="https://fr-ca.facebook.com/"><img src="image/facebook.png" alt="facebook"/></a></li>
-                <li><a href="https://www.google.ca/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google"><img src="image/google.png" alt="google"/></a></li>
-                <li><a href="https://www.youtube.com/?hl=fr&gl=CA"><img src="image/youtube.png" alt="youtube"/></a></li>
-                <li><a href="https://twitter.com/?lang=fr"><img src="image/twitter.png" alt="twitter"/></a></li>
-            </ul>
-        </nav>
-    </footer>
+                <ul> <!--RESEAUX SOCIAUX-->
+                    <li><a href="https://fr-ca.facebook.com/"><img src="image/facebook.png" alt="facebook"/></a></li>
+                    <li><a href="https://www.google.ca/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google"><img src="image/google.png" alt="google"/></a></li>
+                    <li><a href="https://www.youtube.com/?hl=fr&gl=CA"><img src="image/youtube.png" alt="youtube"/></a></li>
+                    <li><a href="https://twitter.com/?lang=fr"><img src="image/twitter.png" alt="twitter"/></a></li>
+                </ul>
+            </nav>
+        </footer>
 
     </body>
 </html>

@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SANGRE AZTECA</title>
-    <link rel="stylesheet" type="text/css" href="Css/MainCss.css">
-    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8">
+        <title>Lutteur 3</title>
+        <!--LIEN CSS-->
+        <link rel="stylesheet" href="css/maincss.css">
+        <!--LIEN TYPOS-->
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+        <!--LIEN FAVICON-->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Projet ISI : HTML5" />
+        <meta name="description" content="lucha libre, catch, mexique, luchiadore, lutteur" />
+        <meta name="robots" content="index" />
 
-</head>
-<body id="bck_lutteurs">
-<audio autoplay src="music/voice3.wav"></audio>
+        <!--/****VERSIONS ANTERIEURES IE9****/-->
+        <!--<link rel="stylesheet" href="css/fixe.css"/>-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
 
-<header>
-    <a href="Index.html"><img src="Image/logo-solo.png"></a>
-    <nav>
-        <ul>
-            <li><a href="gallerie_lutteur.html">Luchadores</a></li>
-            <li><a href="Events.html">Eventos</a></li>
-            <li><a href="contacts.html">Contacto</a></li>
-            <li><a href="infos.html">Info</a></li>
-        </ul>
-    </nav>
-</header>
+    <body id="bck_lutteurs">
+        <audio autoplay src="music/voice3.wav"></audio>
 
-<main id="details">
+        <header>
+            <a href="index.html"><img src="image/logo-solo.png"></a>
+            <nav>
+                <ul>
+                    <li><a href="gallerie_lutteur.html">Luchadores</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                    <li><a href="contacts.html">Contacto</a></li>
+                    <li><a href="infos.html">Info</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section>
+        <main id="details">
+            <section>
+                <figure>
+                    <figcaption>SANGRE AZTECA</figcaption>
+                    <img src="image/luchador3.png" alt="luchador3"/>
+                </figure>
+                <article>
+                    <p>Nombre completo: Alexandro Navaro</p>
+                    <p>Fecha de nacimiento: 1979-08-05</p>
+                    <p>Nationalidad: Mexicano</p>
+                    <p>Años activo: 13 años</p>
+                    <p>Residencia: Zacatecas </p>
+                    <p>Victorias: 32</p>
+                    <meter value="3" min="0" max="4" low="1" high="3"></meter>
+                </article>
+            </section>
+        </main>
 
-        <figure>
-            <figcaption>SANGRE AZTECA</figcaption>
-            <img src="Image/luchador3.png" alt="luchador3"/>
-        </figure>
-        <article>
-            <p>Nombre completo: Alexandro Navaro</p>
-            <p>Fecha de nacimiento: 1979-08-05</p>
-            <p>Nationalidad: Mexicano</p>
-            <p>Años activo: 13 años</p>
-            <p>Residencia: Zacatecas </p>
-            <p>Victorias: 32</p>
-            <meter value="3" min="0" max="4" low="1" high="3"></meter>
-        </article>
-    </section>
+        <footer>
+            <nav>
+                <ul> <!--HYPERLIENS-->
+                    <li><a href="gallerie_lutteur.html">Luchadores</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="contacts.html">Contacto</a></li>
+                    <li><a href="infos.html">Info</a></li>
+                </ul>
 
+                <div> <!--ADRESSE-->
+                    <p>11612 Calle San Javier</p>
+                    <p>Collinia San Pedro CP 64390</p>
+                    <p>Zacatecas, ZAC</p>
+                </div>
 
-
-</main>
-
-
-<footer>
-    <nav>
-        <ul> <!--HYPERLIENS-->
-            <li><a href="gallerie_lutteur.html">Luchadores</a></li>
-            <li><a href="Events.html">Eventos</a></li>
-            <li><a href="Index.html">Index</a></li>
-            <li><a href="contacts.html">Contacto</a></li>
-            <li><a href="#">Info</a></li>
-        </ul>
-
-        <div> <!--ADRESSE-->
-            <p>11612 Calle San Javier</p>
-            <p>Collinia San Pedro CP 64390</p>
-            <p>Zacatecas, ZAC</p>
-        </div>
-
-        <ul> <!--RESEAUX SOCIAUX-->
-            <li><a href="https://fr-ca.facebook.com/"><img src="image/facebook.png" alt="facebook"/></a></li>
-            <li><a href="https://www.google.ca/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google"><img src="image/google.png" alt="google"/></a></li>
-            <li><a href="https://www.youtube.com/?hl=fr&gl=CA"><img src="image/youtube.png" alt="youtube"/></a></li>
-            <li><a href="https://twitter.com/?lang=fr"><img src="image/twitter.png" alt="twitter"/></a></li>
-        </ul>
-    </nav>
-</footer>
-</body>
+                <ul> <!--RESEAUX SOCIAUX-->
+                    <li><a href="https://fr-ca.facebook.com/"><img src="image/facebook.png" alt="facebook"/></a></li>
+                    <li><a href="https://www.google.ca/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google"><img src="image/google.png" alt="google"/></a></li>
+                    <li><a href="https://www.youtube.com/?hl=fr&gl=CA"><img src="image/youtube.png" alt="youtube"/></a></li>
+                    <li><a href="https://twitter.com/?lang=fr"><img src="image/twitter.png" alt="twitter"/></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
 </html>

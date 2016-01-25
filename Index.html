@@ -1,98 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Accueil</title>
-    <link rel="stylesheet" type="text/css" href="Css/MainCss.css">
-    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8">
+        <title>Accueil</title>
+        <!--LIEN CSS-->
+        <link rel="stylesheet" href="css/maincss.css">
+        <!--LIEN TYPOS-->
+        <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+        <!--LIEN FAVICON-->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Projet ISI : HTML5" />
+        <meta name="description" content="lucha libre, catch, mexique, luchiadore, lutteur" />
+        <meta name="robots" content="index" />
 
-</head>
-<header>
-    <a href="Index.html"><img src="Image/logo-solo.png"></a>
-    <nav>
-        <ul>
-            <li><a href="gallerie_lutteur.html">Luchadores</a></li>
-            <li><a href="Events.html">Eventos</a></li>
-            <li><a href="contacts.html">Contacto</a></li>
-            <li><a href="infos.html">Info</a></li>
-        </ul>
-    </nav>
-</header>
-<body id="bckg-index">
+        <!--/****VERSIONS ANTERIEURES IE9****/-->
+        <!--<link rel="stylesheet" href="css/fixe.css"/>-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
 
-<main>
-    <section>
-        <div id='Accueil-slider'>
-            <div class="slider-inner">
+    <body id="bckg-index">
+        <header>
+            <a href="index.html"><img src="image/logo-solo.png"></a>
+            <nav>
                 <ul>
-                    <li><a class="ns-img" href="Image/Thunder-vs.-U.-Guerrero.jpg"></a></li>
-                    <li>
-                        <div class="video">
-                            <iframe src="https://player.vimeo.com/video/73361277" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <a class="ns-img" href="Image/Solitario%20vs%20Villano%20III.jpg"></a>
-                        <div class="caption">Un grand classic pour les amateurs</div>
-                        <div class="video-playbutton-layer"></div>
-                    </li>
-                    <li>
-                        <div class="video">
-                            <iframe src="https://www.youtube.com/embed/mqsU7O5-fVY?enablejsapi=1&start=216&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1" frameborder="0" allowfullscreen data-autoplay="false"></iframe>
-                        </div>
-                        <a class="ns-img" href="Image/coverstory1_468.jpg"></a>
-                        <div class="caption">Notre Main event de cette semaine</div>
-                        <div class="video-playbutton-layer"></div>
-                    </li>
-                    <li>
-                        <div class="video">
-                            <video controls width="100%">
-                                <source src="Video/Lucha%20Libre!!!.mp4" type="video/mp4" />
-                            </video>
-                        </div>
-                    </li>
-                    <li>
-                            <a class="ns-img" href="Image/Female-lucha.jpg"></a>
-                        <div class="video" style="background-color:transparent;height:auto;top:auto;bottom:0px;">
-                            <audio controls data-autoplay="1">
-                                <source src="Video/mcaudio.mp3" type="audio/mpeg">
-                            </audio>
-                        </div>
-                    </li>
+                    <li><a href="gallerie_lutteur.html">Luchadores</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                    <li><a href="contacts.html">Contacto</a></li>
+                    <li><a href="infos.html">Info</a></li>
                 </ul>
-                <div class="fs-icon"></div>
-            </div>
-        </div>
-    </section>
-    <aside>
-    </aside>
-    <article>
-    </article>
-    <footer>
-        <nav>
-            <ul> <!--HYPERLIENS-->
-                <li><a href="gallerie_lutteur.html">Luchadores</a></li>
-                <li><a href="Events.html">Eventos</a></li>
-                <li><a href="Index.html">Index</a></li>
-                <li><a href="contacts.html">Contacto</a></li>
-                <li><a href="#">Info</a></li>
-            </ul>
+            </nav>
+        </header>
 
-            <div> <!--ADRESSE-->
-                <p>11612 Calle San Javier</p>
-                <p>Collinia San Pedro CP 64390</p>
-                <p>Zacatecas, ZAC</p>
-            </div>
+        <main>
+            <section>
+                <div id='Accueil-slider'>
+                    <div class="slider-inner">
+                        <ul>
+                            <li><a class="ns-img" href="image/Thunder-vs.-U.-Guerrero.jpg"></a></li>
+                            <li>
+                                <div class="video">
+                                    <iframe src="https://player.vimeo.com/video/73361277" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <a class="ns-img" href="image/Solitario%20vs%20Villano%20III.jpg"></a>
+                                <div class="caption">Un grand classic pour les amateurs</div>
+                                <div class="video-playbutton-layer"></div>
+                            </li>
+                            <li>
+                                <div class="video">
+                                    <iframe src="https://www.youtube.com/embed/mqsU7O5-fVY?enablejsapi=1&start=216&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1" frameborder="0" allowfullscreen data-autoplay="false"></iframe>
+                                </div>
+                                <a class="ns-img" href="image/coverstory1_468.jpg"></a>
+                                <div class="caption">Notre Main event de cette semaine</div>
+                                <div class="video-playbutton-layer"></div>
+                            </li>
+                            <li>
+                                <div class="video">
+                                    <video controls width="100%">
+                                        <source src="Video/Lucha%20Libre!!!.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </li>
+                            <li>
+                                    <a class="ns-img" href="image/Female-lucha.jpg"></a>
+                                <div class="video" style="background-color:transparent;height:auto;top:auto;bottom:0;">
+                                    <audio controls data-autoplay="1">
+                                        <source src="Video/mcaudio.mp3" type="audio/mpeg">
+                                    </audio>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="fs-icon"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul> <!--HYPERLIENS-->
+                    <li><a href="gallerie_lutteur.html">Luchadores</a></li>
+                    <li><a href="events.html">Eventos</a></li>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="contacts.html">Contacto</a></li>
+                    <li><a href="infos.html">Info</a></li>
+                </ul>
 
-            <ul> <!--RESEAUX SOCIAUX-->
-                <li><a href="https://fr-ca.facebook.com/"><img src="image/facebook.png" alt="facebook"/></a></li>
-                <li><a href="https://www.google.ca/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google"><img src="image/google.png" alt="google"/></a></li>
-                <li><a href="https://www.youtube.com/?hl=fr&gl=CA"><img src="image/youtube.png" alt="youtube"/></a></li>
-                <li><a href="https://twitter.com/?lang=fr"><img src="image/twitter.png" alt="twitter"/></a></li>
-            </ul>
-        </nav>
-    </footer>
-</main>
-<script src="JavaScript/AccueilVideoPlugin.js"></script>
-<script src="JavaScript/Accueil-slider.js"></script>
-</body>
+                <div> <!--ADRESSE-->
+                    <p>11612 Calle San Javier</p>
+                    <p>Collinia San Pedro CP 64390</p>
+                    <p>Zacatecas, ZAC</p>
+                </div>
+
+                <ul> <!--RESEAUX SOCIAUX-->
+                    <li><a href="https://fr-ca.facebook.com/"><img src="image/facebook.png" alt="facebook"/></a></li>
+                    <li><a href="https://www.google.ca/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=google"><img src="image/google.png" alt="google"/></a></li>
+                    <li><a href="https://www.youtube.com/?hl=fr&gl=CA"><img src="image/youtube.png" alt="youtube"/></a></li>
+                    <li><a href="https://twitter.com/?lang=fr"><img src="image/twitter.png" alt="twitter"/></a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+    <script src="javascript/AccueilVideoPlugin.js"></script>
+    <script src="javascript/Accueil-slider.js"></script>
 </html>
